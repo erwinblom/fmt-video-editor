@@ -1,0 +1,7 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {vozTranscript} from '../desert-ant.mjs';
+const input=()=>({words:[{text:'Uh,',start:0,end:.2},{text:'I',start:.3,end:.5},{text:'I',start:.55,end:.7},{text:'think.',start:.8,end:1.2},{text:'Ah.',start:1.5,end:1.8}]});
+test('Voz retains fillers, repeated words and raw times in separate literal layer',()=>{const raw=input(),before=structuredClone(raw),out=vozTranscript(raw,2);assert.deepEqual(raw,before);assert.equal(out.words.map(w=>w.text).join('').trim(),'Uh, I I think. Ah.');assert.deepEqual(out.words.map(w=>[w.start,w.end]),raw.words.map(w=>[w.start,w.end]));assert.deepEqual(out.segments.map(s=>s.text),['Uh, I I think.','Ah.']);assert.ok(out.words.every(w=>w.approximate===true));assert.ok(out.segments.every(s=>!Object.hasOwn(s,'nl')));});
+test('Voz rejects empty, invalid bounds, reversed timestamps and out-of-order words',()=>{for(const mutate of [r=>r.words=[],r=>r.words[0].text=' ',r=>r.words[0].start=-.1,r=>r.words[0].end=-.1,r=>r.words[0].end=NaN,r=>r.words[0].start=2,r=>r.words[0].end=2.3,r=>r.words[2].start=.1]){const r=input();mutate(r);assert.throws(()=>vozTranscript(r,2));}});
+test('Voz clips tolerated model endpoint overrun to media and gives zero-duration words a bounded interval',()=>{const out=vozTranscript({words:[{text:'uh',start:.1,end:.1},{text:'end.',start:.9,end:1.1}]},1);assert.equal(out.words[0].end,.11);assert.equal(out.words[1].end,1);assert.equal(out.segments[0].end,1);});

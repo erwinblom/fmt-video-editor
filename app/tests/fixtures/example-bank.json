@@ -1,0 +1,237 @@
+{
+  "id": "synthetic-tool-library-v1",
+  "sourceTitle": "Demo Werkplaats · Gast (fictief)",
+  "method": "Volledig fictieve voorstelbank voor deterministische softwaretests.",
+  "summary": "Fictief verhaal over gereedschap delen, veilig gebruiken en zelf beginnen.",
+  "teaser": [
+    {
+      "id": "emails",
+      "start": 136.58,
+      "end": 140.76,
+      "nl": "Samen repareren levert weer bruikbaar tuingereedschap op."
+    },
+    {
+      "id": "q10",
+      "start": 770.64,
+      "end": 774.88,
+      "nl": "Samen repareren levert weer bruikbaar tuingereedschap op."
+    },
+    {
+      "id": "controle",
+      "start": 331.3,
+      "end": 336.26,
+      "nl": "Samen repareren levert weer bruikbaar tuingereedschap op."
+    }
+  ],
+  "units": [
+    {
+      "id": "uitleg",
+      "blockId": "b2",
+      "order": 0,
+      "priority": 100,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s10",
+          "quoteId": null,
+          "start": 160.06,
+          "end": 167.16,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        },
+        {
+          "conversationId": "s11",
+          "quoteId": "q2",
+          "start": 178.62,
+          "end": 181.1,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        },
+        {
+          "conversationId": "s53",
+          "quoteId": "q3",
+          "start": 1323.48,
+          "end": 1346.56,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "blockId": "b1",
+      "order": 1,
+      "priority": 55,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s8",
+          "quoteId": "q0",
+          "start": 133.22,
+          "end": 140.76,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "controle",
+      "blockId": "b4",
+      "order": 2,
+      "priority": 95,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s15",
+          "quoteId": null,
+          "start": 314.06,
+          "end": 320.42,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        },
+        {
+          "conversationId": "s16",
+          "quoteId": "q6",
+          "start": 320.74,
+          "end": 353.34,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "onboarding",
+      "blockId": "b5",
+      "order": 3,
+      "priority": 40,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s21",
+          "quoteId": "q7",
+          "start": 431.68,
+          "end": 445.88,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "europa",
+      "blockId": "b6",
+      "order": 4,
+      "priority": 80,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s26",
+          "quoteId": "q9",
+          "start": 586.88,
+          "end": 596.52,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "praktijk",
+      "blockId": "b7",
+      "order": 5,
+      "priority": 94,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s32",
+          "quoteId": null,
+          "start": 733.28,
+          "end": 744.96,
+          "nl": "Met uitleenlabels noteren buurtbewoners wanneer gereedschap terugkomt."
+        },
+        {
+          "conversationId": "s33",
+          "quoteId": "q10",
+          "start": 752.88,
+          "end": 774.88,
+          "nl": "Met uitleenlabels noteren buurtbewoners wanneer gereedschap terugkomt."
+        },
+        {
+          "conversationId": "s34",
+          "quoteId": null,
+          "start": 816.72,
+          "end": 828.78,
+          "nl": "Met uitleenlabels noteren buurtbewoners wanneer gereedschap terugkomt."
+        }
+      ]
+    },
+    {
+      "id": "kwaliteit",
+      "blockId": "b9",
+      "order": 6,
+      "priority": 35,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s40",
+          "quoteId": "q12",
+          "start": 964.3,
+          "end": 983.42,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "team",
+      "blockId": "b10",
+      "order": 7,
+      "priority": 65,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s43",
+          "quoteId": null,
+          "start": 1066.0,
+          "end": 1080.16,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        },
+        {
+          "conversationId": "s44",
+          "quoteId": "q13",
+          "start": 1082.44,
+          "end": 1109.58,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    },
+    {
+      "id": "beginnen",
+      "blockId": "b11",
+      "order": 8,
+      "priority": 90,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s59",
+          "quoteId": null,
+          "start": 1478.72,
+          "end": 1483.84,
+          "nl": "Begin met uitleenlabels voor de gereedschapsbibliotheek."
+        },
+        {
+          "conversationId": "s60",
+          "quoteId": "q15",
+          "start": 1483.84,
+          "end": 1528.76,
+          "nl": "Begin met uitleenlabels voor de gereedschapsbibliotheek."
+        }
+      ]
+    },
+    {
+      "id": "nuance",
+      "blockId": "b12",
+      "order": 9,
+      "priority": 99,
+      "reason": "Fictieve casus over de gereedschapsbibliotheek; prioriteit voor regressie van de selectie.",
+      "clips": [
+        {
+          "conversationId": "s62",
+          "quoteId": "q16",
+          "start": 1567.48,
+          "end": 1578.52,
+          "nl": "Buurtbewoners delen gereedschap en controleren het na gebruik."
+        }
+      ]
+    }
+  ]
+}

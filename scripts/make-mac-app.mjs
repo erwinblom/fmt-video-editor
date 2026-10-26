@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const outputIndex=process.argv.indexOf('--output');
+const output=outputIndex>=0?path.resolve(process.argv[outputIndex+1]):root;
+const app=path.join(output,'FMT Video Editor.app');
+if(process.platform!=='darwin')throw Error('De Mac-startapp is alleen voor macOS.');
+const check=spawnSync(process.execPath,[path.join(root,'scripts/check-app-icon.mjs')],{stdio:'inherit'});
+if(check.status!==0)process.exit(check.status||1);
+for(const folder of ['Contents/MacOS','Contents/Resources'])fs.mkdirSync(path.join(app,folder),{recursive:true});
+fs.copyFileSync(path.join(root,'app/public/app-icon.icns'),path.join(app,'Contents/Resources/FMT-video-familie.icns'));
+// The application travels with its source folder; no machine-specific path is stored.
+const start='#!/bin/zsh\nset -eu\nproject_dir="$(cd "$(dirname "$0")/../../.." && pwd)"\nexec /bin/zsh "$project_dir/Start FMT Video Editor.command"\n';
+fs.writeFileSync(path.join(app,'Contents/MacOS/start'),start,{mode:0o755});
+fs.chmodSync(path.join(app,'Contents/MacOS/start'),0o755);
+fs.writeFileSync(path.join(app,'Contents/Info.plist'),`<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict><key>CFBundleName</key><string>FMT Video Editor</string><key>CFBundleDisplayName</key><string>FMT Video Editor</string><key>CFBundleExecutable</key><string>start</string><key>CFBundleIconFile</key><string>FMT-video-familie.icns</string><key>CFBundleIdentifier</key><string>nl.fastmovingtargets.video.editor.launcher</string><key>CFBundlePackageType</key><string>APPL</string><key>CFBundleVersion</key><string>1</string></dict></plist>`);
+const sign=spawnSync('/usr/bin/codesign',['--force','--sign','-','--identifier','nl.fastmovingtargets.video.editor.launcher',app],{stdio:'inherit'});
+if(sign.status!==0)process.exit(sign.status||1);
+console.log('Mac-startapp gemaakt: '+app+'. Laat deze bij de projectbestanden staan; sleep haar naar het Dock.');

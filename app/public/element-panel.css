@@ -1,0 +1,35 @@
+#elementPanel .elementProposal{border:1px solid #ddd8d1;border-radius:14px;background:#fff;padding:16px;margin:12px 0;display:grid;gap:9px}
+#elementPanel .elementProposal>strong{font-size:15px;line-height:1.4}
+#elementPanel .elementProposal p{margin:0;line-height:1.5;font-size:13px}
+#elementPanel .elementProposalStatus{font-size:11px;color:#68625a}
+#elementPanel .elementProposal[data-status="approved"]{border-color:#77917c}
+#elementPanel .elementProposal[data-status="rejected"]{background:#f4f2ee;color:#76716a}
+#elementPanel .elementProposalActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:5px}
+#elementPanel .elementProposalActions button{font-size:12px}
+#elementPanel .elementProposal details{padding:0;border:0;background:none}
+#elementPanel .elementProposal details summary{font-size:12px;color:#68625a}
+#elementPanel .elementProposal details p,#elementPanel .elementProposal details a{margin-top:8px;font-size:12px}
+#elementPanel .elementCreationError{color:#a52016}
+#elementPanel .elementProposalNote{font-size:12px;padding:10px 12px;border-left:3px solid #e10600;background:#f5f1eb}
+#elementPanel .elementPair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#elementPanel .elementPair>label{min-width:0}
+#elementPanel .elementPair textarea{min-height:58px}
+#elementPanel .elementRect{display:grid;grid-template-columns:1fr 1fr;gap:8px;border:1px solid #dedad3;border-radius:10px;margin:12px 0;padding:12px}
+#elementPanel .elementRect legend{font-size:12px;color:#68625a;padding:0 4px}
+#elementPanel .elementRect label{font-size:12px;margin:0}
+#elementPanel [data-field="image-controls"]{margin:12px 0}
+#elementPanel [hidden]{display:none!important}
+@media(max-width:480px){#elementPanel .elementPair{grid-template-columns:1fr}}
+/* One review route, using the same element editor and video preview. */
+#elementReviewOpen{width:100%;margin-bottom:24px;text-align:left;padding:16px;font-weight:650;border-radius:12px;background:#fff}
+#elementReviewDialog{width:min(760px,94vw)}
+.elementReviewOverview{padding:24px 30px;overflow:auto}
+.elementReviewOverview>progress{width:100%;height:5px;margin:0 0 20px;accent-color:#e10600}
+.elementReviewItem{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #e5e1dc;padding:20px 0}
+.elementReviewItem>div{display:grid;gap:6px}.elementReviewItem strong{font-size:16px}.elementReviewItem small,.elementReviewItem span{font-size:12px;color:#706b64}.elementReviewItem img{width:100%;max-width:360px}.elementReviewItem details{max-width:50%}
+#elementReviewBar{grid-column:1/-1;padding:24px 28px;border-bottom:1px solid #e5e1dc;background:#fff;border-radius:16px 16px 0 0}
+#elementReviewBar[hidden]{display:none}.elementReviewHeading{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.elementReviewHeading h2{font-size:23px;letter-spacing:-.5px;margin:8px 0}.elementReviewHeading p{font-size:12px;color:#706b64;margin:0}
+#elementReviewBar>p,#elementReviewBar details{font-size:13px;line-height:1.6}#elementReviewBar details{color:#706b64;margin:12px 0}#elementReviewBar details p{max-width:85ch}.elementReviewDecisions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}#elementReviewBar [data-message]:empty{display:none}
+.reviewingElements>.panelHead,.reviewingElements #nowPlaying,.reviewingElements .sourceActions,.reviewingElements #shotLayer,.reviewingElements .manualReviewActions,.reviewingElements .automaticCutNotice,.reviewingElements .sourceToolbar button:not(#sourcePlay),.reviewingElements .sourceBody> :not(#elementPanel),.reviewingElements #elementPanel>summary,.reviewingElements #elementPanel>.muted,.reviewingElements .elementSuggestions,.reviewingElements .elementButtons{display:none!important}
+.reviewingElements #elementPanel{border:0!important;margin:0!important;padding-top:0!important}.reviewingElements .sourceToolbar{margin-top:12px}
+@media(max-width:650px){#elementReviewBar,.elementReviewOverview{padding:18px}.elementReviewHeading{flex-direction:column}.elementReviewHeading h2{font-size:20px}.elementReviewItem{gap:10px}.elementReviewItem details{max-width:45%}}

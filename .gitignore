@@ -1,0 +1,56 @@
+# Only software is shared. All other root folders stay local.
+/*
+!/.gitignore
+!/README.md
+!/TWEE-MACS.md
+!/REDACTIEREGELS.md
+!/AGENTS.md
+!/package.json
+!/package-lock.json
+!/.env.example
+!/.fmt-local.example.json
+!/*.command
+!/app/
+!/scripts/
+!/template/
+/app/data/
+**/__pycache__/
+**/node_modules/
+**/.build/
+**/*.log
+**/.DS_Store
+**/*.mp4
+**/*.mov
+**/*.mp3
+**/*.wav
+!/template/assets/beat-80bpm.wav
+/scripts/desert-ant/.swiftpm/
+
+# Documents for this local publication candidate.
+!/PROJECT.md
+!/PUBLICATIESTATUS.md
+!/PRIVACY.md
+!/THIRD_PARTY_NOTICES.md
+!/SECURITY.md
+!/LICENSE
+!/docs/
+
+# Asset audit and third-party license notices.
+!/ASSETRECHTEN.md
+!/licenses/
+
+!/MERKVOORWAARDEN.md
+
+!/RECHTEN.md
+
+!/BEATVOORWAARDEN.md
+
+!/MODELVOORWAARDEN.md
+
+!/EXTERNE-PAKKETTEN.md
+
+# Reproducible source packages keep their explicit file list.
+!/release-files.txt
+
+!/SOURCE-SHA256SUMS.txt
+!/skills/

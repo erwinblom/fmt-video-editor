@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "source": "Volledig fictief interview voor softwaretests: Demo Werkplaats, buurttuin en gereedschapsbibliotheek. Nieuw geschreven testinhoud; geen echte personen, opname of meetgegevens.",
+  "note": "Alle tijden zijn fictieve testcoördinaten. Deze fixture toetst redactionele regels en bewijst geen audiokwaliteit of timing op echte media.",
+  "cases": [
+    {
+      "id": "synthetic-tool-reservation",
+      "start": 20,
+      "end": 40,
+      "text": "Sinds we het uitleenbord gebruiken, reserveer ik de heggenschaar voor een vaste middag. Ik hoef daardoor geen eigen machine te kopen voor twee snoeibeurten per jaar.",
+      "expectedAccept": true,
+      "reason": "Zelfstandige persoonlijke ervaring met een concreet voordeel van de fictieve gereedschapsbibliotheek."
+    },
+    {
+      "id": "synthetic-tool-return",
+      "start": 80,
+      "end": 100,
+      "text": "Bij de laatste uitleenronde kwamen alle twaalf gereedschappen op tijd terug. De gekleurde retourlabels maakten voor iedere lener zichtbaar op welke dag het apparaat weer beschikbaar moest zijn.",
+      "expectedAccept": true,
+      "reason": "Concreet fictief resultaat met een uitgelegde werkwijze; geen algemene garantie."
+    },
+    {
+      "id": "synthetic-seed-exchange",
+      "start": 120,
+      "end": 140,
+      "text": "Bij Demo Werkplaats ruilen we overgebleven zaadjes in kleine enveloppen. Op ieder envelopje staat de plantnaam en het zaaiseizoen, zodat een nieuwe tuinier meteen weet wat ermee kan.",
+      "expectedAccept": true,
+      "reason": "Begrijpelijk zelfstandig voorbeeld van de fictieve zadenruil."
+    },
+    {
+      "id": "synthetic-missing-context",
+      "start": 145,
+      "end": 155,
+      "text": "Dat zetten we dan daarbij en vervolgens werkt die andere afspraak ook weer. Daarom is deze oplossing voor ons beter dan de vorige.",
+      "expectedAccept": false,
+      "reason": "Onverklaarde verwijzingen: niet duidelijk welke afspraak, oplossing of vorige aanpak wordt bedoeld."
+    },
+    {
+      "id": "synthetic-absolute-promise",
+      "start": 160,
+      "end": 175,
+      "text": "Met onze uitleenkast heeft niemand in de buurt ooit nog een kapot apparaat. Er kan vanaf nu niets meer misgaan, ongeacht welk gereedschap iemand kiest.",
+      "expectedAccept": false,
+      "reason": "Onbegrensde garantie die de afzonderlijke fictieve ervaring niet kan dragen."
+    },
+    {
+      "id": "synthetic-opening-update",
+      "start": 180,
+      "end": 195,
+      "text": "Volgende maand willen we de tweede kast openen. Het lint is besteld en de uitnodiging ligt klaar, maar er is nog niets uit die kast uitgeleend.",
+      "expectedAccept": false,
+      "reason": "Aankondiging van een toekomstige opening zonder aangetoond resultaat voor de gebruiker."
+    },
+    {
+      "id": "synthetic-vague-progress",
+      "start": 200,
+      "end": 210,
+      "text": "We zijn druk bezig met allerlei contacten in de wijk. Er komen gesprekken aan en we kijken verder naar mogelijkheden, maar ik kan nog geen verandering noemen.",
+      "expectedAccept": false,
+      "reason": "Activiteiten zonder concreet benoemd effect of bruikbaar inzicht."
+    },
+    {
+      "id": "synthetic-withdrawn-conclusion",
+      "start": 215,
+      "end": 230,
+      "text": "Ik dacht dat het waterrooster goed werkte, maar ik heb de standen nog niet bekeken. Misschien verwissel ik de weken; eigenlijk weet ik nog niet of het water scheelt.",
+      "expectedAccept": false,
+      "reason": "Spreker trekt de conclusie zelf in; als korte aanbeveling zou dit misleidend zijn."
+    },
+    {
+      "id": "synthetic-unexplained-list",
+      "start": 235,
+      "end": 245,
+      "text": "Dan krijg je die, en de grotere misschien ook, plus de blauwe bak en nog zo een. Met die combinatie lukt het meestal wel.",
+      "expectedAccept": false,
+      "reason": "Losse opsomming met onbekende voorwerpen en een ontbrekend doel."
+    },
+    {
+      "id": "synthetic-production-aside",
+      "start": 250,
+      "end": 260,
+      "text": "Kun je de microfoon even van de gieter halen? We stoppen de opname nu kort, want de ventilator staat nog aan.",
+      "expectedAccept": false,
+      "reason": "Regie en opnameonderbreking horen niet in een inhoudelijke teaser."
+    },
+    {
+      "id": "synthetic-mixed-question-answer",
+      "start": 265,
+      "end": 285,
+      "text": "De buurttuin krijgt iedere zaterdag een emmer compost. Kun je nu uitleggen wie de sleutel van de gereedschapskast bewaart?",
+      "expectedAccept": false,
+      "reason": "Een gastzin en een interviewervraag over een ander onderwerp zijn aaneengeplakt."
+    },
+    {
+      "id": "synthetic-implausible-number",
+      "start": 290,
+      "end": 305,
+      "text": "Volgens mijn losse schatting besparen drie regentonnen dagelijks negentigduizend liter water. Ik heb de inhoud nooit gemeten en heb geen telling bijgehouden.",
+      "expectedAccept": false,
+      "reason": "Ononderbouwd en zonder schaaluitleg onaannemelijk getal; de fictieve spreker heeft niets gemeten."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0,
+      "end": 10,
+      "text": "Dit is een volledig verzonnen gesprek over Demo Werkplaats. Wat heeft de gereedschapsbibliotheek veranderd?",
+      "speaker": "Interviewer"
+    },
+    {
+      "start": 20,
+      "end": 40,
+      "text": "Sinds we het uitleenbord gebruiken, reserveer ik de heggenschaar voor een vaste middag. Ik hoef daardoor geen eigen machine te kopen voor twee snoeibeurten per jaar.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 80,
+      "end": 100,
+      "text": "Bij de laatste uitleenronde kwamen alle twaalf gereedschappen op tijd terug. De gekleurde retourlabels maakten voor iedere lener zichtbaar op welke dag het apparaat weer beschikbaar moest zijn.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 120,
+      "end": 140,
+      "text": "Bij Demo Werkplaats ruilen we overgebleven zaadjes in kleine enveloppen. Op ieder envelopje staat de plantnaam en het zaaiseizoen, zodat een nieuwe tuinier meteen weet wat ermee kan.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 145,
+      "end": 155,
+      "text": "Dat zetten we dan daarbij en vervolgens werkt die andere afspraak ook weer. Daarom is deze oplossing voor ons beter dan de vorige.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 160,
+      "end": 175,
+      "text": "Met onze uitleenkast heeft niemand in de buurt ooit nog een kapot apparaat. Er kan vanaf nu niets meer misgaan, ongeacht welk gereedschap iemand kiest.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 180,
+      "end": 195,
+      "text": "Volgende maand willen we de tweede kast openen. Het lint is besteld en de uitnodiging ligt klaar, maar er is nog niets uit die kast uitgeleend.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 200,
+      "end": 210,
+      "text": "We zijn druk bezig met allerlei contacten in de wijk. Er komen gesprekken aan en we kijken verder naar mogelijkheden, maar ik kan nog geen verandering noemen.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 215,
+      "end": 230,
+      "text": "Ik dacht dat het waterrooster goed werkte, maar ik heb de standen nog niet bekeken. Misschien verwissel ik de weken; eigenlijk weet ik nog niet of het water scheelt.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 235,
+      "end": 245,
+      "text": "Dan krijg je die, en de grotere misschien ook, plus de blauwe bak en nog zo een. Met die combinatie lukt het meestal wel.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 250,
+      "end": 260,
+      "text": "Kun je de microfoon even van de gieter halen? We stoppen de opname nu kort, want de ventilator staat nog aan.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 265,
+      "end": 274,
+      "text": "De buurttuin krijgt iedere zaterdag een emmer compost.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 274,
+      "end": 285,
+      "text": "Kun je nu uitleggen wie de sleutel van de gereedschapskast bewaart?",
+      "speaker": "Interviewer"
+    },
+    {
+      "start": 290,
+      "end": 305,
+      "text": "Volgens mijn losse schatting besparen drie regentonnen dagelijks negentigduizend liter water. Ik heb de inhoud nooit gemeten en heb geen telling bijgehouden.",
+      "speaker": "Gast"
+    },
+    {
+      "start": 310,
+      "end": 320,
+      "text": "Dank je voor dit fictieve voorbeeld. Hiermee eindigt het testgesprek.",
+      "speaker": "Interviewer"
+    }
+  ],
+  "duration": 320
+}

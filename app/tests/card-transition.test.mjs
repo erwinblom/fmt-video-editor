@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';import {fileURLToPath} from 'node:url';import {python,command} from '../runtime-config.mjs';
+const ff=command('ffmpeg'),probe=command('ffprobe');
+test('echte kaartrender: eerder/later op exact frame, ondertitel behouden en duur gelijk',{skip:spawnSync(ff,['-version']).status!==0||spawnSync(probe,['-version']).status!==0,timeout:60000},()=>{const p=spawnSync(python,[fileURLToPath(new URL('./card_transition_check.py',import.meta.url)),ff,probe],{encoding:'utf8',timeout:55000});assert.equal(p.status,0,p.stderr||p.stdout);});

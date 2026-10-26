@@ -1,0 +1,77 @@
+{
+  "id": "video-editor-interview",
+  "version": "1.0",
+  "frame": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 25,
+    "background": "#F5F3EE",
+    "ink": "#0A0A0A",
+    "accent": "#E10600"
+  },
+  "image": {
+    "x": 208,
+    "y": 32,
+    "width": 1504,
+    "height": 846,
+    "border": 8,
+    "shadow": 12
+  },
+  "caption_rail": {
+    "x": 200,
+    "y": 916,
+    "width": 1520,
+    "height": 128,
+    "font": "Inter",
+    "size": 44,
+    "line_height": 50,
+    "max_lines": 2,
+    "max_text_width": 1360,
+    "language": "nl",
+    "chunking": "complete sentences"
+  },
+  "target": {
+    "asset": "assets/fmt-target-logo.svg",
+    "x": 1776,
+    "y": 48,
+    "width": 104,
+    "height": 104,
+    "persistent": true
+  },
+  "type": {
+    "head": "Inter-Bold.ttf",
+    "body": "Inter-Regular.ttf",
+    "label": "PaperMono-Regular.ttf"
+  },
+  "timing": {
+    "intro_seconds": 6,
+    "topic_seconds": 3,
+    "outro_seconds": 6,
+    "approx_final_minutes": 10
+  },
+  "beat": {
+    "asset": null,
+    "enabled": false
+  },
+  "editing": {
+    "include_interviewer_questions_or_story": false,
+    "mute_backchannels_only_without_guest_speech": true,
+    "camera_changes": "wide/close near sentence boundaries, typically 12-22 seconds; choose source crop per recording",
+    "preserve_original": true,
+    "subtitles_last": true
+  },
+  "export": {
+    "video_codec": "h264",
+    "profile": "high",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_bitrate": "256k",
+    "fps": 25,
+    "crf": 18
+  },
+  "logo": {
+    "asset": null,
+    "source": "optional own style",
+    "persistent": false
+  }
+}

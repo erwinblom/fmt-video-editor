@@ -1,0 +1,16 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {resolveFraming,DEFAULT_FRAMING} from '../public/framing.mjs';import {validateEdits} from '../public/model.mjs';import {exportPlan} from '../export-plan.mjs';import {montageSignature} from '../public/export-status.mjs';
+const catalog=JSON.parse(fs.readFileSync(new URL('./fixtures/example-catalog.json',import.meta.url)));
+const initial=()=>({version:1,revision:0,mode:'quoteverhaal',target:300,modes:Object.fromEntries(['quoteverhaal','gespreksmontage'].map(mode=>[mode,{teaser:['q0','q10','q6'],blocks:structuredClone(catalog.catalog[mode]),edits:{}}]))});
+test('drie voorstellen, per bronvenster gekalibreerd, vaste rail en beeldlijst',()=>{const s=initial(),shots=s.modes.quoteverhaal.blocks.flatMap(b=>b.clipIds.map(id=>resolveFraming(s,catalog,id,b.id)));assert.deepEqual(new Set(shots.map(f=>f.shot)),new Set(['wide','medium','close']));for(const f of shots){assert.deepEqual(f.caption,DEFAULT_FRAMING.caption);assert.deepEqual(f.image,DEFAULT_FRAMING.image);assert.ok(f.crop.x+f.crop.width<=f.source.width);assert.ok(f.crop.y+f.crop.height<=f.source.height);}s.mode='gespreksmontage';assert.equal(resolveFraming(s,catalog,'s7','b1').suggested,'wide');});
+test('eigen uitsnede alleen op deze fragmentplek; export en videostatus volgen dezelfde crop',()=>{const s=initial(),before=structuredClone(s),sig=montageSignature(s,catalog);s.modes.quoteverhaal.edits['b1:q0']={start:103.22,end:110.76,nl:'Eigen Nederlandse tekst.',translationReviewed:false,shot:'close'};validateEdits(s.modes.quoteverhaal,catalog,s.mode);assert.equal(resolveFraming(s,catalog,'q0','b1').shot,'close');assert.equal(resolveFraming(s,catalog,'q0','teaser').manual,false);assert.notEqual(montageSignature(s,catalog),sig);const e=exportPlan(s,catalog).events.find(e=>e.blockId==='b1'&&e.id==='q0');assert.equal(e.framing.shot,'close');assert.equal(e.nl,'Eigen Nederlandse tekst.');assert.deepEqual(s.modes.gespreksmontage,before.modes.gespreksmontage);s.modes.quoteverhaal.edits['b1:q0'].shot='nonsense';assert.throws(()=>validateEdits(s.modes.quoteverhaal,catalog,s.mode),/uitsnede/);});
+test('expliciet hetzelfde beeld kiezen maakt een film niet ten onrechte verouderd',()=>{const s=initial(),q=catalog.quotes.q0,sig=montageSignature(s,catalog),shot=resolveFraming(s,catalog,'q0','b1').shot;s.modes.quoteverhaal.edits['b1:q0']={start:q.start,end:q.end,nl:q.nl,translationReviewed:false,shot};assert.equal(montageSignature(s,catalog),sig);});
+
+test('interview guest crop overrides every clip and teaser in both modes without changing edits',()=>{
+ const s=initial(),before=structuredClone(s.modes),old=montageSignature(s,catalog);
+ s.guestCrop={x:400,y:100,width:1200,height:900};
+ for(const mode of ['quoteverhaal','gespreksmontage']){s.mode=mode;for(const e of exportPlan(s,catalog).events.filter(e=>e.kind==='clip')){assert.equal(e.framing.fullFrame,false);assert.deepEqual(e.framing.crop,{...s.guestCrop,contain:true});}}
+ s.mode='quoteverhaal';assert.notEqual(montageSignature(s,catalog),old);assert.deepEqual(s.modes,before);
+ const reloaded=JSON.parse(JSON.stringify(s));assert.deepEqual(resolveFraming(reloaded,catalog,'q0','b1').crop,{...s.guestCrop,contain:true});
+ delete s.guestCrop;assert.equal(montageSignature(s,catalog),old);
+});

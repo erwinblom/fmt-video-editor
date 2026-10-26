@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "source": "Volledig fictieve bronpassages over Demo Werkplaats, nieuw geschreven voor softwaretests. De technische passage-IDs zijn stabiele testsleutels en beschrijven geen echte bron.",
+  "note": "Alle personen, gebeurtenissen, resultaten en tijdcodes zijn verzonnen. Geen audioproef.",
+  "passages": [
+    {
+      "id": "media-work",
+      "start": 40,
+      "end": 70,
+      "text": "Voor de gereedschapsbibliotheek schrijven we iedere uitleenbeurt op een kaart. De lener kiest een retourdag en krijgt een gekleurd label mee. Bij het terugbrengen controleren we samen of alle onderdelen aanwezig zijn.",
+      "theme": "Uitleenafspraken voor gedeeld gereedschap"
+    },
+    {
+      "id": "crm",
+      "start": 90,
+      "end": 105,
+      "text": "De regentonnen staan aan de noordkant van de buurttuin. We verdelen het opgevangen water met een rooster per plantenbed, zodat de jonge planten eerst water krijgen.",
+      "theme": "Regenwater verdelen over de plantenbedden"
+    },
+    {
+      "id": "media-result",
+      "start": 190,
+      "end": 210,
+      "text": "Die retourlabels hielpen bij onze laatste uitleenronde: alle twaalf gereedschappen waren op de afgesproken dag terug. Daardoor kon de volgende lener direct aan de slag.",
+      "theme": "Retourlabels maken gereedschap op tijd beschikbaar"
+    },
+    {
+      "id": "release",
+      "start": 250,
+      "end": 265,
+      "text": "De tweede uitleenkast openen we volgende maand. We moeten de planken nog monteren en hebben daarom nog geen ervaringen met deze nieuwe plek.",
+      "theme": "Voorbereiding van een tweede uitleenkast"
+    },
+    {
+      "id": "positioning",
+      "start": 130,
+      "end": 165,
+      "text": "Demo Werkplaats combineert een buurttuin met een gereedschapsbibliotheek. We willen dat bewoners leren repareren en telen door samen te oefenen. Daarom plannen we iedere zaterdag een inloopuur met een vrijwilliger die voordoet hoe je veilig begint.",
+      "theme": "Samen oefenen als doel van Demo Werkplaats"
+    }
+  ],
+  "sameTopic": [
+    [
+      "media-work",
+      "media-result"
+    ]
+  ],
+  "differentTopics": [
+    [
+      "crm",
+      "release"
+    ],
+    [
+      "crm",
+      "media-work"
+    ],
+    [
+      "positioning",
+      "release"
+    ]
+  ],
+  "questions": [
+    {
+      "id": "question",
+      "start": 215,
+      "end": 225,
+      "text": "Waarom schrijf je de plantnaam en het zaaiseizoen op de envelopjes bij de zadenruil?",
+      "theme": "Vraag naar uitleg bij de zadenruil"
+    },
+    {
+      "id": "answer",
+      "start": 225,
+      "end": 245,
+      "text": "Een nieuwe tuinier herkent losse zaden vaak nog niet. Met de plantnaam en het seizoen op de envelop kan die thuis kiezen waar en wanneer de zaden de grond in gaan.",
+      "theme": "Zadenruil begrijpelijk maken voor beginners"
+    },
+    {
+      "id": "release",
+      "start": 250,
+      "end": 265,
+      "text": "De tweede uitleenkast openen we volgende maand. We moeten de planken nog monteren en hebben daarom nog geen ervaringen met deze nieuwe plek.",
+      "theme": "Voorbereiding van een tweede uitleenkast"
+    }
+  ],
+  "expectedJoined": [
+    [
+      "question",
+      "answer"
+    ]
+  ],
+  "selectionBudgets": [
+    90,
+    180,
+    300
+  ]
+}

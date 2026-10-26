@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "synthetic": true,
+  "source": "Fictieve volledige-formatproef bij het testgesprek Demo Werkplaats.",
+  "note": "Deze numerieke probes horen alleen bij een analyse van synthetic-editorial.json. Alle tijden en gebeurtenissen zijn fictief. Dit is geen echte audio-, spreekherkennings- of exportproef; voer het controlescript alleen uit met een afzonderlijke analyseproefmap van deze fixture.",
+  "differentTopics": [
+    [
+      25,
+      125
+    ],
+    [
+      85,
+      165
+    ],
+    [
+      25,
+      185
+    ],
+    [
+      125,
+      220
+    ],
+    [
+      205,
+      295
+    ],
+    [
+      125,
+      270
+    ]
+  ],
+  "sameTopics": [
+    [
+      25,
+      85
+    ]
+  ],
+  "excludedRanges": [
+    [
+      250,
+      260
+    ],
+    [
+      310,
+      320
+    ]
+  ],
+  "requiredGuestRanges": [
+    [
+      20,
+      40
+    ],
+    [
+      80,
+      100
+    ]
+  ]
+}

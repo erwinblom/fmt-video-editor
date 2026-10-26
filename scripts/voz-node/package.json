@@ -1,0 +1,10 @@
+{
+  "name": "fmt-voz-runtime",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@desert-ant-labs/voz": "4.0.0",
+    "onnxruntime-node": "1.24.3"
+  }
+}

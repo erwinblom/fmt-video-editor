@@ -1,0 +1,1056 @@
+{
+  "version": 1,
+  "title": "Demo Werkplaats · Gast (fictief)",
+  "duration": 1800,
+  "source": "synthetic-test-recording.mp4",
+  "quotes": {
+    "q0": {
+      "id": "q0",
+      "speaker": "Gast",
+      "start": 133.12,
+      "end": 147.84,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept"
+    },
+    "q1": {
+      "id": "q1",
+      "speaker": "Gast",
+      "start": 168.34,
+      "end": 172.74,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen.",
+      "translationStatus": "concept"
+    },
+    "q2": {
+      "id": "q2",
+      "speaker": "Gast",
+      "start": 178.52,
+      "end": 181.2,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen.",
+      "translationStatus": "concept"
+    },
+    "q3": {
+      "id": "q3",
+      "speaker": "Gast",
+      "start": 1323.38,
+      "end": 1346.58,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept"
+    },
+    "q4": {
+      "id": "q4",
+      "speaker": "Gast",
+      "start": 188.06,
+      "end": 209.98,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "translationStatus": "concept"
+    },
+    "q5": {
+      "id": "q5",
+      "speaker": "Gast",
+      "start": 246.62,
+      "end": 275.14,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept"
+    },
+    "q6": {
+      "id": "q6",
+      "speaker": "Gast",
+      "start": 320.64,
+      "end": 370.32,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept"
+    },
+    "q7": {
+      "id": "q7",
+      "speaker": "Gast",
+      "start": 429.34,
+      "end": 445.9,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen.",
+      "translationStatus": "concept"
+    },
+    "q8": {
+      "id": "q8",
+      "speaker": "Gast",
+      "start": 501.7,
+      "end": 547.9,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen.",
+      "translationStatus": "concept"
+    },
+    "q9": {
+      "id": "q9",
+      "speaker": "Gast",
+      "start": 586.78,
+      "end": 605.46,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept"
+    },
+    "q10": {
+      "id": "q10",
+      "speaker": "Gast",
+      "start": 753.34,
+      "end": 828.78,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "translationStatus": "concept"
+    },
+    "q11": {
+      "id": "q11",
+      "speaker": "Gast",
+      "start": 859.22,
+      "end": 923.46,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept"
+    },
+    "q12": {
+      "id": "q12",
+      "speaker": "Gast",
+      "start": 964.2,
+      "end": 1026.72,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept"
+    },
+    "q13": {
+      "id": "q13",
+      "speaker": "Gast",
+      "start": 1082.34,
+      "end": 1109.7,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen.",
+      "translationStatus": "concept"
+    },
+    "q14": {
+      "id": "q14",
+      "speaker": "Interviewer",
+      "start": 1112.42,
+      "end": 1141.86,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "q15": {
+      "id": "q15",
+      "speaker": "Gast",
+      "start": 1492.96,
+      "end": 1559.96,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept"
+    },
+    "q16": {
+      "id": "q16",
+      "speaker": "Gast",
+      "start": 1567.48,
+      "end": 1615.04,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "translationStatus": "concept"
+    },
+    "emails": {
+      "id": "emails",
+      "speaker": "Gast",
+      "start": 136.5,
+      "end": 140.9,
+      "en": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "text": "The repair table saved six broken watering cans this month."
+    },
+    "controle": {
+      "id": "controle",
+      "speaker": "Gast",
+      "start": 325.65,
+      "end": 329.65,
+      "en": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "text": "We share the repair notes so another volunteer can continue."
+    },
+    "europa": {
+      "id": "europa",
+      "speaker": "Gast",
+      "start": 586.8,
+      "end": 589.5,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is."
+    },
+    "s0": {
+      "id": "s0",
+      "speaker": "Gast",
+      "start": 63.4,
+      "end": 64.68,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners."
+    },
+    "s1": {
+      "id": "s1",
+      "speaker": "Interviewer",
+      "start": 64.68,
+      "end": 66.28,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s2": {
+      "id": "s2",
+      "speaker": "Gast",
+      "start": 66.28,
+      "end": 67.48,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen."
+    },
+    "s3": {
+      "id": "s3",
+      "speaker": "Interviewer",
+      "start": 67.48,
+      "end": 69.08,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s4": {
+      "id": "s4",
+      "speaker": "Gast",
+      "start": 69.08,
+      "end": 79.08,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan."
+    },
+    "s5": {
+      "id": "s5",
+      "speaker": "Interviewer",
+      "start": 79.72,
+      "end": 91.24,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s6": {
+      "id": "s6",
+      "speaker": "Gast",
+      "start": 92.36,
+      "end": 105.24,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners."
+    },
+    "s7": {
+      "id": "s7",
+      "speaker": "Interviewer",
+      "start": 107.24,
+      "end": 111.4,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s8": {
+      "id": "s8",
+      "speaker": "Gast",
+      "start": 111.4,
+      "end": 143.16,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s9": {
+      "id": "s9",
+      "speaker": "Gast",
+      "start": 144.36,
+      "end": 152.32,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s10": {
+      "id": "s10",
+      "speaker": "Interviewer",
+      "start": 153.28,
+      "end": 167.16,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s11": {
+      "id": "s11",
+      "speaker": "Gast",
+      "start": 167.16,
+      "end": 210.66,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s12": {
+      "id": "s12",
+      "speaker": "Gast",
+      "start": 210.74,
+      "end": 255.2,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept",
+      "translationNote": "Controleer de genoemde productnamen in de bronaudio. Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s13": {
+      "id": "s13",
+      "speaker": "Gast",
+      "start": 255.52,
+      "end": 299.54,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s14": {
+      "id": "s14",
+      "speaker": "Gast",
+      "start": 299.7,
+      "end": 313.82,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen."
+    },
+    "s15": {
+      "id": "s15",
+      "speaker": "Interviewer",
+      "start": 314.06,
+      "end": 320.42,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s16": {
+      "id": "s16",
+      "speaker": "Gast",
+      "start": 320.74,
+      "end": 363.48,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s17": {
+      "id": "s17",
+      "speaker": "Gast",
+      "start": 363.64,
+      "end": 384.96,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s18": {
+      "id": "s18",
+      "speaker": "Interviewer",
+      "start": 385.76,
+      "end": 394.72,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s19": {
+      "id": "s19",
+      "speaker": "Gast",
+      "start": 394.66,
+      "end": 406.82,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen."
+    },
+    "s20": {
+      "id": "s20",
+      "speaker": "Interviewer",
+      "start": 406.82,
+      "end": 424.74,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s21": {
+      "id": "s21",
+      "speaker": "Gast",
+      "start": 424.82,
+      "end": 457.52,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept"
+    },
+    "s22": {
+      "id": "s22",
+      "speaker": "Interviewer",
+      "start": 458.0,
+      "end": 462.1,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s23": {
+      "id": "s23",
+      "speaker": "Gast",
+      "start": 462.74,
+      "end": 506.84,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept"
+    },
+    "s24": {
+      "id": "s24",
+      "speaker": "Gast",
+      "start": 506.84,
+      "end": 547.84,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept"
+    },
+    "s25": {
+      "id": "s25",
+      "speaker": "Interviewer",
+      "start": 547.74,
+      "end": 577.76,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s26": {
+      "id": "s26",
+      "speaker": "Gast",
+      "start": 578.16,
+      "end": 620.6,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s27": {
+      "id": "s27",
+      "speaker": "Gast",
+      "start": 621.12,
+      "end": 662.54,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters."
+    },
+    "s28": {
+      "id": "s28",
+      "speaker": "Gast",
+      "start": 662.54,
+      "end": 679.08,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan."
+    },
+    "s29": {
+      "id": "s29",
+      "speaker": "Interviewer",
+      "start": 679.08,
+      "end": 682.28,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s30": {
+      "id": "s30",
+      "speaker": "Gast",
+      "start": 682.14,
+      "end": 726.28,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners."
+    },
+    "s31": {
+      "id": "s31",
+      "speaker": "Gast",
+      "start": 727.0,
+      "end": 733.72,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen."
+    },
+    "s32": {
+      "id": "s32",
+      "speaker": "Interviewer",
+      "start": 733.28,
+      "end": 746.16,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s33": {
+      "id": "s33",
+      "speaker": "Gast",
+      "start": 746.32,
+      "end": 790.84,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s34": {
+      "id": "s34",
+      "speaker": "Gast",
+      "start": 791.16,
+      "end": 835.02,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s35": {
+      "id": "s35",
+      "speaker": "Gast",
+      "start": 835.18,
+      "end": 840.38,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is."
+    },
+    "s36": {
+      "id": "s36",
+      "speaker": "Gast",
+      "start": 842.94,
+      "end": 884.48,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s37": {
+      "id": "s37",
+      "speaker": "Gast",
+      "start": 884.64,
+      "end": 928.56,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s38": {
+      "id": "s38",
+      "speaker": "Gast",
+      "start": 928.8,
+      "end": 951.58,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen."
+    },
+    "s39": {
+      "id": "s39",
+      "speaker": "Interviewer",
+      "start": 951.58,
+      "end": 964.06,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s40": {
+      "id": "s40",
+      "speaker": "Gast",
+      "start": 964.3,
+      "end": 1005.76,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s41": {
+      "id": "s41",
+      "speaker": "Gast",
+      "start": 1006.08,
+      "end": 1049.24,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s42": {
+      "id": "s42",
+      "speaker": "Gast",
+      "start": 1049.4,
+      "end": 1065.36,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners."
+    },
+    "s43": {
+      "id": "s43",
+      "speaker": "Interviewer",
+      "start": 1066.0,
+      "end": 1082.48,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s44": {
+      "id": "s44",
+      "speaker": "Gast",
+      "start": 1082.44,
+      "end": 1109.58,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen.",
+      "translationStatus": "concept"
+    },
+    "s45": {
+      "id": "s45",
+      "speaker": "Gast",
+      "start": 1111.08,
+      "end": 1111.8,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept"
+    },
+    "s46": {
+      "id": "s46",
+      "speaker": "Interviewer",
+      "start": 1112.52,
+      "end": 1141.76,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s47": {
+      "id": "s47",
+      "speaker": "Gast",
+      "start": 1141.66,
+      "end": 1182.08,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept"
+    },
+    "s48": {
+      "id": "s48",
+      "speaker": "Interviewer",
+      "start": 1187.96,
+      "end": 1217.14,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s49": {
+      "id": "s49",
+      "speaker": "Gast",
+      "start": 1217.94,
+      "end": 1261.52,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen."
+    },
+    "s50": {
+      "id": "s50",
+      "speaker": "Gast",
+      "start": 1262.28,
+      "end": 1267.08,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen."
+    },
+    "s51": {
+      "id": "s51",
+      "speaker": "Gast",
+      "start": 1268.6,
+      "end": 1286.08,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters."
+    },
+    "s52": {
+      "id": "s52",
+      "speaker": "Interviewer",
+      "start": 1286.08,
+      "end": 1312.06,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s53": {
+      "id": "s53",
+      "speaker": "Gast",
+      "start": 1311.92,
+      "end": 1355.72,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is.",
+      "translationStatus": "concept",
+      "translationNote": "Controleer de productnaam en de woorden “shut down” in de audio; het brontranscript kan hier onjuist zijn. Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s54": {
+      "id": "s54",
+      "speaker": "Gast",
+      "start": 1355.88,
+      "end": 1391.04,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners."
+    },
+    "s55": {
+      "id": "s55",
+      "speaker": "Interviewer",
+      "start": 1391.68,
+      "end": 1397.52,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s56": {
+      "id": "s56",
+      "speaker": "Gast",
+      "start": 1398.32,
+      "end": 1400.16,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen."
+    },
+    "s57": {
+      "id": "s57",
+      "speaker": "Interviewer",
+      "start": 1400.4,
+      "end": 1420.68,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s58": {
+      "id": "s58",
+      "speaker": "Gast",
+      "start": 1420.92,
+      "end": 1465.06,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan."
+    },
+    "s59": {
+      "id": "s59",
+      "speaker": "Interviewer",
+      "start": 1465.86,
+      "end": 1483.84,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?",
+      "translationStatus": "concept"
+    },
+    "s60": {
+      "id": "s60",
+      "speaker": "Gast",
+      "start": 1483.84,
+      "end": 1528.76,
+      "text": "Our tool library lends repaired garden tools to neighbours.",
+      "nl": "Onze gereedschapsbibliotheek leent gerepareerd tuingereedschap uit aan buurtbewoners.",
+      "translationStatus": "concept"
+    },
+    "s61": {
+      "id": "s61",
+      "speaker": "Gast",
+      "start": 1528.76,
+      "end": 1561.86,
+      "text": "Members reserve a tool before collecting it on Saturday.",
+      "nl": "Leden reserveren gereedschap voordat ze het op zaterdag ophalen.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s62": {
+      "id": "s62",
+      "speaker": "Gast",
+      "start": 1563.08,
+      "end": 1608.04,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s63": {
+      "id": "s63",
+      "speaker": "Gast",
+      "start": 1608.36,
+      "end": 1615.04,
+      "text": "The repair table saved six broken watering cans this month.",
+      "nl": "De reparatietafel redde deze maand zes kapotte gieters.",
+      "translationStatus": "concept",
+      "translationNote": " Deze spreekbeurt sluit aan op de vorige of volgende passage; controleer de zin in context."
+    },
+    "s64": {
+      "id": "s64",
+      "speaker": "Interviewer",
+      "start": 1615.04,
+      "end": 1618.32,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s65": {
+      "id": "s65",
+      "speaker": "Gast",
+      "start": 1618.56,
+      "end": 1629.74,
+      "text": "A paper checklist still helps when the booking screen is unavailable.",
+      "nl": "Een papieren checklist helpt als het reserveringsscherm niet beschikbaar is."
+    },
+    "s66": {
+      "id": "s66",
+      "speaker": "Interviewer",
+      "start": 1630.14,
+      "end": 1631.42,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s67": {
+      "id": "s67",
+      "speaker": "Interviewer",
+      "start": 1632.86,
+      "end": 1650.58,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s68": {
+      "id": "s68",
+      "speaker": "Gast",
+      "start": 1653.46,
+      "end": 1661.38,
+      "text": "A volunteer checks every returned drill before the next loan.",
+      "nl": "Een vrijwilliger controleert elke teruggebrachte boormachine voor de volgende uitleen."
+    },
+    "s69": {
+      "id": "s69",
+      "speaker": "Interviewer",
+      "start": 1661.38,
+      "end": 1670.36,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    },
+    "s70": {
+      "id": "s70",
+      "speaker": "Gast",
+      "start": 1670.68,
+      "end": 1674.68,
+      "text": "We share the repair notes so another volunteer can continue.",
+      "nl": "We delen reparatienotities zodat een andere vrijwilliger verder kan."
+    },
+    "s71": {
+      "id": "s71",
+      "speaker": "Interviewer",
+      "start": 1674.84,
+      "end": 1677.24,
+      "text": "How does the neighbourhood tool library organise this safely?",
+      "nl": "Hoe regelt de gereedschapsbibliotheek dit veilig?"
+    }
+  },
+  "catalog": {
+    "quoteverhaal": [
+      {
+        "id": "b1",
+        "title": "Reserveren",
+        "clipIds": [
+          "q0"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b2",
+        "title": "Wat de bibliotheek doet",
+        "clipIds": [
+          "q1",
+          "q2",
+          "q3"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b3",
+        "title": "Voor wie het is",
+        "clipIds": [
+          "q4",
+          "q5"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b4",
+        "title": "Controle op gereedschap",
+        "clipIds": [
+          "q6"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b5",
+        "title": "Vrijwilligers inwerken",
+        "clipIds": [
+          "q7",
+          "q8"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b6",
+        "title": "Samen inkopen",
+        "clipIds": [
+          "q9"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b7",
+        "title": "Reparaties in de praktijk",
+        "clipIds": [
+          "q10"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b8",
+        "title": "Begeleiding blijft nodig",
+        "clipIds": [
+          "q11"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b9",
+        "title": "Vaardigheden oefenen",
+        "clipIds": [
+          "q12"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b10",
+        "title": "Een klein team",
+        "clipIds": [
+          "q13"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b11",
+        "title": "Zelf beginnen",
+        "clipIds": [
+          "q15"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b12",
+        "title": "Grenzen van delen",
+        "clipIds": [
+          "q16"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      }
+    ],
+    "gespreksmontage": [
+      {
+        "id": "b1",
+        "title": "Reserveren",
+        "clipIds": [
+          "s7",
+          "s8",
+          "s9"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b2",
+        "title": "Wat de bibliotheek doet",
+        "clipIds": [
+          "s10",
+          "s11",
+          "s52",
+          "s53"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b3",
+        "title": "Voor wie het is",
+        "clipIds": [
+          "s10",
+          "s11",
+          "s12",
+          "s13"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b4",
+        "title": "Controle op gereedschap",
+        "clipIds": [
+          "s15",
+          "s16",
+          "s17"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b5",
+        "title": "Vrijwilligers inwerken",
+        "clipIds": [
+          "s20",
+          "s21",
+          "s22",
+          "s23",
+          "s24",
+          "s25"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b6",
+        "title": "Samen inkopen",
+        "clipIds": [
+          "s25",
+          "s26"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b7",
+        "title": "Reparaties in de praktijk",
+        "clipIds": [
+          "s32",
+          "s33",
+          "s34"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b8",
+        "title": "Begeleiding blijft nodig",
+        "clipIds": [
+          "s36",
+          "s37"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b9",
+        "title": "Vaardigheden oefenen",
+        "clipIds": [
+          "s39",
+          "s40",
+          "s41"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b10",
+        "title": "Een klein team",
+        "clipIds": [
+          "s43",
+          "s44",
+          "s45",
+          "s46",
+          "s47"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b11",
+        "title": "Zelf beginnen",
+        "clipIds": [
+          "s59",
+          "s60",
+          "s61"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      },
+      {
+        "id": "b12",
+        "title": "Grenzen van delen",
+        "clipIds": [
+          "s62",
+          "s63"
+        ],
+        "reason": "Fictieve regressiecasus voor bronvolgorde, bronbehoud en montagekeuze."
+      }
+    ]
+  },
+  "teaserCandidates": [
+    "controle",
+    "emails",
+    "europa"
+  ],
+  "transcript": [],
+  "words": [],
+  "primarySpeaker": "Gast"
+}

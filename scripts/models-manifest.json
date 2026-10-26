@@ -1,0 +1,114 @@
+{
+  "checked": "2026-10-21",
+  "bundled": false,
+  "weightsDownloadedOrExecutedInAudit": false,
+  "items": [
+    {
+      "name": "voz",
+      "kind": "model",
+      "source": "desert-ant-labs/voz",
+      "tag": "v0.4.0",
+      "resolved_commit": "55b31a7ef412394c787a2766ea4fbe8dcc97c77d",
+      "gated": false,
+      "license": "other",
+      "license_name": "desert-ant-labs-source-available-1.0",
+      "bundled": false,
+      "inherited_licenses": [
+        {
+          "origin": "NVIDIA Parakeet 0.6B v3",
+          "license": "CC-BY-4.0",
+          "notice": "licenses/models/voz-THIRD_PARTY_NOTICES.md"
+        }
+      ]
+    },
+    {
+      "name": "who",
+      "kind": "model",
+      "source": "desert-ant-labs/who",
+      "tag": "v0.3.1",
+      "resolved_commit": "debaf57feb8da21d1283e13aa6a7b1fda1178b7c",
+      "gated": false,
+      "license": "other",
+      "license_name": "desert-ant-labs-source-available-1.0",
+      "bundled": false,
+      "license_date": "2026-06-15",
+      "license_file": "licenses/models/who-LICENSE.md",
+      "applicability": "unresolved against current SDK terms"
+    },
+    {
+      "name": "ear",
+      "kind": "model",
+      "source": "desert-ant-labs/ear",
+      "tag": "v0.2.0",
+      "resolved_commit": "2d0b5ab1bad1ce4e2de86268623e285cc646d763",
+      "gated": false,
+      "license": "other",
+      "license_name": "desert-ant-labs-source-available-1.0",
+      "bundled": false,
+      "inherited_licenses": [
+        {
+          "origin": "OpenAI Whisper tiny",
+          "license": "MIT",
+          "notice": "licenses/models/ear-THIRD_PARTY_NOTICES.md"
+        }
+      ]
+    },
+    {
+      "name": "gemma",
+      "kind": "model",
+      "file": "gemma-4-E4B-it-Q4_K_M.gguf",
+      "bytes": 4977171584,
+      "sha256": "85a896a047553e842f25297ee5b031d64ff30147d9c4af17b1e4b394cd1fab87",
+      "file_commit": "bfc15c382204943c3a8fff0c750b94ae2364d7a3",
+      "license": "Apache-2.0",
+      "bundled": false,
+      "model_executed": false,
+      "model_downloaded": false
+    },
+    {
+      "name": "qwen",
+      "kind": "model",
+      "file": "Qwen3.5-9B-Q4_K_M.gguf",
+      "bytes": 5680522464,
+      "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "file_commit": "99a1b2185534379e6e8b5ec869da25d3e7b3f73c",
+      "license": "Apache-2.0",
+      "bundled": false,
+      "model_executed": false,
+      "model_downloaded": false
+    },
+    {
+      "name": "whisper",
+      "kind": "model",
+      "file": "ggml-small.bin",
+      "bytes": 487601967,
+      "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b",
+      "file_commit": "80da2d8bfee42b0e836fc3a9890373e5defc00a6",
+      "license": "MIT",
+      "bundled": false,
+      "model_executed": false,
+      "model_downloaded": false
+    },
+    {
+      "name": "pyannote-segmentation-3.0 ONNX",
+      "kind": "model",
+      "source_license": "MIT",
+      "upstream_hf_gated": true,
+      "download_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-segmentation-models/sherpa-onnx-pyannote-segmentation-3-0.tar.bz2",
+      "sha256": "24615ee884c897d9d2ba09bb4d30da6bb1b15e685065962db5b02e76e4996488",
+      "archive_license_inspected": true,
+      "bundled": false,
+      "license_file": "licenses/Pyannote-Sherpa-CNRS-MIT.txt",
+      "evidence": "Exact archive inspected separately in CH-199"
+    },
+    {
+      "name": "3D-Speaker ERes2Net ONNX",
+      "kind": "model",
+      "source_license": "Apache-2.0",
+      "download_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k.onnx",
+      "sha256": "1a331345f04805badbb495c775a6ddffcdd1a732567d5ec8b3d5749e3c7a5e4b",
+      "conversion_commit": null,
+      "bundled": false
+    }
+  ]
+}

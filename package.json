@@ -1,0 +1,31 @@
+{
+  "name": "fmt-video-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "start": "node app/server.mjs",
+    "test": "node scripts/check-app-icon.mjs && node --test app/tests/*.test.mjs",
+    "check": "node scripts/check-installation.mjs",
+    "software:status": "node scripts/software.mjs status",
+    "software:haal": "node scripts/software.mjs haal",
+    "software:deel": "node scripts/software.mjs deel",
+    "demo": "node scripts/make-synthetic-demo.mjs",
+    "release:check": "node scripts/check-publication.mjs --release",
+    "candidate:check": "node scripts/check-app-icon.mjs && node scripts/check-publication.mjs",
+    "app:mac": "node scripts/make-mac-app.mjs",
+    "source:check": "node scripts/check-source-package.mjs"
+  },
+  "dependencies": {
+    "hyperframes": "0.8.171",
+    "puppeteer-core": "25.15.0",
+    "sharp": "0.35.5"
+  },
+  "license": "MIT",
+  "optionalDependencies": {
+    "@desert-ant-labs/eye": "4.1.0"
+  }
+}
