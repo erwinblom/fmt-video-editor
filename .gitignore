@@ -58,3 +58,6 @@
 !/*.bat
 !/*.sh
 !/.github/
+!/PLATFORM.md
+!/CHANGELOG.md
+!/.gitattributes
