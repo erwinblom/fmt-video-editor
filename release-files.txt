@@ -1,17 +1,23 @@
 .env.example
 .fmt-local.example.json
+.gitattributes
+.github/workflows/platforms.yml
 .gitignore
 AGENTS.md
 ASSETRECHTEN.md
 BEATVOORWAARDEN.md
+CHANGELOG.md
 Controleer deze Mac.command
 Deel softwarewijzigingen.command
 EXTERNE-PAKKETTEN.md
 Haal softwarewijzigingen op.command
+Installeer FMT Video Editor.bat
 Installeer FMT Video Editor.command
+Installeer FMT Video Editor.sh
 LICENSE
 MERKVOORWAARDEN.md
 MODELVOORWAARDEN.md
+PLATFORM.md
 PRIVACY.md
 PROJECT.md
 PUBLICATIESTATUS.md
@@ -20,7 +26,9 @@ RECHTEN.md
 REDACTIEREGELS.md
 SECURITY.md
 SOURCE-SHA256SUMS.txt
+Start FMT Video Editor.bat
 Start FMT Video Editor.command
+Start FMT Video Editor.sh
 THIRD_PARTY_NOTICES.md
 app/analysis-jobs.mjs
 app/analyze-interview.mjs
@@ -179,9 +187,11 @@ app/voz-language.mjs
 app/voz-node.mjs
 docs/DESERT-ANT-REACTIE.md
 docs/FMT-LOGO-BEVESTIGING.md
+docs/PUBLICATIE-HISTORIE.md
 docs/RECHTEN-CONTROLE.md
 docs/SCREENSHOT.md
 docs/images/fmt-video-editor.png
+docs/images/platform-editor.png
 licenses/CC0-1.0.txt
 licenses/DEPENDENCY-NOTICES.txt
 licenses/GSAP-Standard-License.txt
@@ -218,10 +228,12 @@ scripts/desert-ant/Package.swift
 scripts/desert-ant/Sources/FMTTranscribe/main.swift
 scripts/install-editor-service.mjs
 scripts/install-local.sh
+scripts/install.mjs
 scripts/make-mac-app.mjs
 scripts/make-source-package.py
 scripts/make-synthetic-demo.mjs
 scripts/models-manifest.json
+scripts/platform-smoke.mjs
 scripts/python-requirements.txt
 scripts/recognize-speakers.py
 scripts/setup-analysis-model.sh
@@ -232,6 +244,7 @@ scripts/setup-voz-node.sh
 scripts/setup-whisper-model.sh
 scripts/software.mjs
 scripts/speaker-requirements.txt
+scripts/start.mjs
 scripts/voz-node/package-lock.json
 scripts/voz-node/package.json
 skills/fmt-interview-video/SKILL.md

@@ -5,3 +5,7 @@ Het README-beeld is op 26 oktober 2026 door Erwin Blom aangeleverd voor deze ope
 De deelversie start leeg, gebruikt een eigen gegevensmap en heeft standaard merkloze uitvoer. De screenshot is illustratiemateriaal, geen inbegrepen voorbeeldproject of belofte dat modellen en cloudfuncties al zijn ingesteld.
 
 De MIT-licentie op software en technische documentatie geeft geen algemene hergebruikslicentie op het getoonde portret, interviewbeeld of FMT-merk. Voor ander gebruik van dit beeld is afzonderlijke toestemming nodig.
+
+## Platformproef
+
+platform-editor.png is een eigen screenshot uit de automatische platformproef met uitsluitend gegenereerde testinhoud. Er is geen nieuw interviewbeeld of portret toegevoegd. De bestaande FMT-merkvoorwaarden blijven gelden.

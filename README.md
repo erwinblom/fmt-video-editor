@@ -6,7 +6,7 @@ Ik maakte dit met AI omdat ik het zelf nodig had. Ik ben geen programmeur en gee
 
 **Lokale video-editor voor Mac, Windows en Linux.** Je werkt in je browser; video’s en montages blijven in de map van de editor op je eigen computer. Dit is een bronuitgave: je installeert eerst de hulpmiddelen hieronder. De [platformcontrole](PLATFORM.md) beschrijft precies welke routes zijn getest.
 
-[Download de nieuwste uitgave](https://github.com/erwinblom/fmt-video-editor/releases/latest) · [Probleem melden](https://github.com/erwinblom/fmt-video-editor/issues)
+[Download de nieuwste uitgave](https://github.com/erwinblom/fmt-video-editor/releases/tag/v0.2.0-preview.1) · [Probleem melden](https://github.com/erwinblom/fmt-video-editor/issues)
 
 ![FMT Video Editor met interviewmontage, hoofdstukken, ondertitels en cijferkaart](docs/images/fmt-video-editor.png)
 
@@ -68,9 +68,9 @@ Bij **Interviewinstellingen → Eigen stijl** kun je een eigen naam, website en 
 | Auphonic | Optionele audiomastering | Lokale audiomix en MP4-export |
 | Eigen analyse-/taalmodel of gekozen cloudmodel | Voorstellen voor verhaallijn, ondertitels en beeldelementen | Zelf selecteren, tekst invoeren en vormgeven |
 
-Whisper: installeer whisper.cpp/`whisper-cli` voor je platform en download het vastgelegde model via `zsh scripts/setup-whisper-model.sh`. Wijs een afwijkend programma of model aan met `FMT_WHISPER_BIN` en `FMT_WHISPER_MODEL` in `.fmt-local.json`. Kies daarna **Whisper** bij import. Segmenttijden zijn geen exact bewezen woordgrenzen. Deze route vereist geen Desert Ant of Auphonic.
+Whisper: installeer whisper.cpp/`whisper-cli` voor je platform. Op Mac/Linux kun je het vastgelegde model ophalen via `sh scripts/setup-whisper-model.sh`; op Windows download je het model volgens de Whisper-documentatie. Wijs een afwijkend programma of model aan met `FMT_WHISPER_BIN` en `FMT_WHISPER_MODEL` in `.fmt-local.json`. Kies daarna **Whisper** bij import. Segmenttijden zijn geen exact bewezen woordgrenzen. Deze route vereist geen Desert Ant of Auphonic.
 
-Desert Ant: lees eerst MODELVOORWAARDEN.md. Modelgebruik vraagt modeldownloads en licentie-/gebruikstelemetrie. De kandidaat weigert SDK-start zolang `FMT_ALLOW_LICENSE_NETWORK` niet bewust op `1` staat in `.fmt-local.json`. Dat blokkeert de SDK vóór starten; de telemetrie wordt niet in de SDK uitgeschakeld. Voz/Who hebben aparte installatie via `scripts/setup-desert-ant.sh`; Eye is een optionele Node-dependency en downloadt zijn model pas bij gebruik. De video en beelden worden lokaal verwerkt. Modelkeuze is geen kwaliteitsgarantie: beoordeel de uitkomst.
+Desert Ant: de meegeleverde Voz/Who-installer is voor macOS. Deze extra route is niet voor Windows/Linux bewezen. Lees eerst MODELVOORWAARDEN.md. Modelgebruik vraagt modeldownloads en licentie-/gebruikstelemetrie. De kandidaat weigert SDK-start zolang `FMT_ALLOW_LICENSE_NETWORK` niet bewust op `1` staat in `.fmt-local.json`. Dat blokkeert de SDK vóór starten; de telemetrie wordt niet in de SDK uitgeschakeld. Voz/Who hebben aparte installatie via `scripts/setup-desert-ant.sh`; Eye is een optionele Node-dependency en downloadt zijn model pas bij gebruik. De video en beelden worden lokaal verwerkt. Modelkeuze is geen kwaliteitsgarantie: beoordeel de uitkomst.
 
 Cloud staat standaard uit met `FMT_ALLOW_CLOUD=0`. Alleen wanneer je zelf cloudfuncties wilt gebruiken, stel je je eigen verbinding en sleutels in volgens PRIVACY.md. Er worden geen makersaccounts of tegoeden meegeleverd. Auphonic is aanvullend: lokale export moet ook blijven werken wanneer de dienst niet is geïnstalleerd, geen account heeft of faalt. Auphonic vraagt daarnaast de expliciete keuze `FMT_AUDIO_MASTERING=auphonic`; de standaard is `local`. Bij een fout blijft de lokale mix beschikbaar en meldt de export de terugval. Cloud inschakelen voor tekst activeert dus niet automatisch audiomastering.
 
