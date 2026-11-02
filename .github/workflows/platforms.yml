@@ -3,12 +3,18 @@ on:
   push:
     branches: [main, ch514-platforms]
   workflow_dispatch:
+    inputs:
+      platform:
+        description: Platform om te controleren
+        type: choice
+        default: all
+        options: [all, windows-2022, ubuntu-24.04, macos-14]
 jobs:
   test:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-24.04, windows-2022, macos-14]
+        os: ${{ fromJSON(inputs.platform && inputs.platform != 'all' && format('["{0}"]', inputs.platform) || '["ubuntu-24.04","windows-2022","macos-14"]') }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 40
     env:
