@@ -45,7 +45,7 @@ De eerste installatie haalt softwarepakketten op en vraagt internet. Handmatig m
    | Linux | `sh "Installeer FMT Video Editor.sh"` | `sh "Start FMT Video Editor.sh"` |
 
    Op Linux voer je de opdracht uit in een terminal in de uitgepakte map. Op alle drie systemen werkt ook `node scripts/install.mjs`, gevolgd door `node scripts/start.mjs`.
-3. De editor opent op **http://localhost:4319**. Houd het terminalvenster open tijdens gebruik. Open de link zelf als je browser niet vanzelf verschijnt. Stop de editor met **Ctrl+C** in het terminalvenster.
+3. Open daarna het **Start FMT Video Editor**-bestand voor jouw systeem uit de tabel hierboven. De editor opent op **http://localhost:4319**. Houd het terminalvenster open tijdens gebruik. Open de link zelf als je browser niet vanzelf verschijnt. Stop de editor met **Ctrl+C** in het terminalvenster.
 4. Kies een eigen opname. Liever eerst oefenen? Voer in de projectmap `npm run demo` uit voordat je start. Dit maakt een fictieve stille video en vervangt geen bestaand werk.
 
 Als je systeem een gedownload script tegenhoudt, lees de melding en gebruik desgewenst de Node-opdrachten hierboven. Schakel geen algemene beveiliging uit. `node scripts/check-installation.mjs` vertelt welk hulpmiddel eventueel ontbreekt.
