@@ -3,6 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {projectRoot,python,templateDir,command} from '../app/runtime-config.mjs';
+import {findEvidenceBrowser} from '../app/evidence-capture.mjs';
 const checks=[];
 const extended=process.argv.includes('--all');
 function check(label,ok,help,optional=false){checks.push({label,ok:!!ok,help,optional});}
@@ -12,6 +13,7 @@ for(const bin of ['ffmpeg','ffprobe'])check(bin,run(command(bin),[bin==='git'?'-
 check('Python met Pillow en NumPy',run(python,['-c','import PIL,numpy']).status===0,'Voer node scripts/install.mjs uit.');
 for(const file of ['template.json','assets/Inter-Regular.ttf','assets/Inter-Bold.ttf','assets/PaperMono-Regular.ttf','assets/interview-frame.png','assets/gsap.min.js'])check('Videotemplate: '+file,fs.existsSync(path.join(templateDir,file)),'Haal de complete softwareversie binnen.');
 check('HyperFrames',fs.existsSync(process.env.FMT_HYPERFRAMES_CLI||path.join(projectRoot,'node_modules/hyperframes/bin/hyperframes.mjs')),'Voer npm ci uit.');
+try{await findEvidenceBrowser();check('Chrome of Chromium',true,'');}catch{check('Chrome of Chromium',false,'Installeer Chrome of stel FMT_BROWSER_BIN in .fmt-local.json in.');}
 if(extended){
  check('Optioneel: Voz / Who voor automatisch uitschrijven en stemmen',fs.existsSync(path.join(projectRoot,'.runtime-desert-ant/build/release/FMTTranscribe')),'Lees MODELVOORWAARDEN.md vóór de aparte installatie; dit onderdeel vraagt licentienetwerk.',true);
  const analysis=process.env.FMT_ANALYSIS_MODEL||path.join(projectRoot,'.runtime-models/analysis/gemma-4-E4B-it-Q4_K_M.gguf');

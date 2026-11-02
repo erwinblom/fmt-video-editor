@@ -1,6 +1,7 @@
 import {spawn} from 'node:child_process';
 import {projectRoot} from '../app/runtime-config.mjs';
 const port=process.env.FMT_EDITOR_PORT||'4319',url=`http://localhost:${port}`;
+try { const r=await fetch(url+'/api/health',{signal:AbortSignal.timeout(1000)}); if(r.ok){console.error('Er draait al een editor op '+url+'. Gebruik dat venster, of kies een andere FMT_EDITOR_PORT in .fmt-local.json.');process.exit(1);} } catch {}
 const child=spawn(process.execPath,['app/server.mjs'],{cwd:projectRoot,stdio:'inherit'});
 child.on('error',e=>{console.error(e.message);process.exitCode=1;});
 child.on('exit',code=>process.exitCode=code||0);

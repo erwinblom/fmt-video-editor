@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 process.chdir(root);
 function run(bin,args){const r=spawnSync(bin,args,{stdio:'inherit',shell:process.platform==='win32'&&/\.cmd$/.test(bin)});if(r.status!==0)throw Error(`Installatie mislukt: ${bin}. Controleer de melding hierboven.`);}
-if(Number(process.versions.node.split('.')[0])<22)throw Error('Installeer Node.js 22.16 of nieuwer.');
+if(Number(process.versions.node.split('.')[0])<22||(process.versions.node.split('.')[0]==='22'&&Number(process.versions.node.split('.')[1])<16))throw Error('Installeer Node.js 22.16 of nieuwer.');
 const py=process.platform==='win32'?'python':'python3';
 run(py,['-c','import sys; assert sys.version_info >= (3,11), "Python 3.11 of nieuwer nodig"']);
 run(process.platform==='win32'?'npm.cmd':'npm',['ci']);

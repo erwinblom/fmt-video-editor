@@ -22,7 +22,7 @@ with tempfile.TemporaryDirectory(prefix='fmt-card-cut-') as d:
  for shift in [-6,6]:
   b={'frames':75,'pictureCut':{'frames':shift}};x,y=apply_card_transition(ff,clip,card,a,b,source,TEMPLATE/'assets/interview-frame.png',d,d/str(shift),encoder,run)
   for file,expected in [(x,50),(y,75)]:
-   meta=json.loads(run([probe,'-v','error','-select_streams','v:0','-show_entries','stream=nb_frames','-of','json',file]));assert int(meta['streams'][0]['nb_frames'])==expected;run([ff,'-v','error','-i',file,'-f','null','-'])
+   meta=json.loads(run([probe,'-v','error','-select_streams','v:0','-show_entries','stream=nb_frames','-of','json',file]));assert int(meta['streams'][0]['nb_frames'])==expected,(str(file),meta,expected);run([ff,'-v','error','-i',file,'-f','null','-'])
   if shift<0:
    before=pixel(x,43,100,100);after=pixel(x,44,100,100);caption=pixel(x,49,100,1000)
    assert before[0]>200 and before[1]<30,(before,after)

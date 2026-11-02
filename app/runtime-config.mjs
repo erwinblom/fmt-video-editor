@@ -13,6 +13,8 @@ if(fs.existsSync(configFile)){
  }
 }
 process.env.FMT_EDITOR_PORT??='4319';
+// Python text files must use the same UTF-8 bytes on Windows and Unix.
+process.env.PYTHONUTF8??='1';
 export function command(name){return process.env['FMT_'+name.toUpperCase().replaceAll('-','_')+'_BIN']||name;}
 const pythonCandidates=[process.env.FMT_PYTHON,path.join(projectRoot,process.platform==='win32'?'.venv/Scripts/python.exe':'.venv/bin/python3')];
 export const python=pythonCandidates.find(p=>p&&fs.existsSync(p))||(process.platform==='win32'?'python':'python3');
