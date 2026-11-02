@@ -14,7 +14,7 @@ if(fs.existsSync(configFile)){
 }
 process.env.FMT_EDITOR_PORT??='4319';
 export function command(name){return process.env['FMT_'+name.toUpperCase().replaceAll('-','_')+'_BIN']||name;}
-const pythonCandidates=[process.env.FMT_PYTHON,path.join(projectRoot,'.venv/bin/python3')];
-export const python=pythonCandidates.find(p=>p&&fs.existsSync(p))||'python3';
+const pythonCandidates=[process.env.FMT_PYTHON,path.join(projectRoot,process.platform==='win32'?'.venv/Scripts/python.exe':'.venv/bin/python3')];
+export const python=pythonCandidates.find(p=>p&&fs.existsSync(p))||(process.platform==='win32'?'python':'python3');
 export const templateDir=process.env.FMT_TEMPLATE_DIR||path.join(projectRoot,'template');
 export const originalSource=process.env.FMT_LEGACY_SOURCE||path.join(projectRoot,'app/data/demo/source.mp4');

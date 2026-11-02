@@ -54,3 +54,7 @@
 
 !/SOURCE-SHA256SUMS.txt
 !/skills/
+
+!/*.bat
+!/*.sh
+!/.github/

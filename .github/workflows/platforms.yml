@@ -1,0 +1,42 @@
+name: Mac Windows Linux
+on:
+  push:
+    branches: [main, ch514-platforms]
+  workflow_dispatch:
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022, macos-14]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    env:
+      PYTHONUTF8: '1'
+      FMT_ALLOW_CLOUD: '0'
+      FMT_ALLOW_LICENSE_NETWORK: '0'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+      - uses: browser-actions/setup-chrome@v1
+        id: chrome
+      - run: node scripts/install.mjs
+      - run: npm test
+      - run: npm run demo
+      - run: node scripts/platform-smoke.mjs
+        env:
+          FMT_BROWSER_BIN: ${{ steps.chrome.outputs.chrome-path }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidence-${{ matrix.os }}
+          path: |
+            platform-evidence/
+            app/data/exports/*/commands.log
+            app/data/exports/*/status.json

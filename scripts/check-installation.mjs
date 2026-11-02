@@ -8,8 +8,8 @@ const extended=process.argv.includes('--all');
 function check(label,ok,help,optional=false){checks.push({label,ok:!!ok,help,optional});}
 const run=(cmd,args)=>spawnSync(cmd,args,{encoding:'utf8',timeout:15000});
 check('Node.js 22.16 of nieuwer',Number(process.versions.node.split('.')[0])>22||(Number(process.versions.node.split('.')[0])===22&&Number(process.versions.node.split('.')[1])>=16),'Installeer een recente Node.js LTS-versie.');
-for(const bin of ['git','ffmpeg','ffprobe'])check(bin,run(command(bin),[bin==='git'?'--version':'-version']).status===0,'Installeer '+bin+' op deze Mac.');
-check('Python met Pillow en NumPy',run(python,['-c','import PIL,numpy']).status===0,'Voer Installeer FMT Video Editor.command uit.');
+for(const bin of ['ffmpeg','ffprobe'])check(bin,run(command(bin),[bin==='git'?'--version':'-version']).status===0,'Installeer '+bin+' op deze computer.');
+check('Python met Pillow en NumPy',run(python,['-c','import PIL,numpy']).status===0,'Voer node scripts/install.mjs uit.');
 for(const file of ['template.json','assets/Inter-Regular.ttf','assets/Inter-Bold.ttf','assets/PaperMono-Regular.ttf','assets/interview-frame.png','assets/gsap.min.js'])check('Videotemplate: '+file,fs.existsSync(path.join(templateDir,file)),'Haal de complete softwareversie binnen.');
 check('HyperFrames',fs.existsSync(process.env.FMT_HYPERFRAMES_CLI||path.join(projectRoot,'node_modules/hyperframes/bin/hyperframes.mjs')),'Voer npm ci uit.');
 if(extended){
