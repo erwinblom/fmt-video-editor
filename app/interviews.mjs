@@ -50,7 +50,7 @@ export function interviewStore(root){
  }
  function archive(id){
   const projectRoot=id==='demo'?data:dir(id),m=ensureIdle(id,projectRoot);if(archiveFor(id))throw Error('Dit interview staat al in de prullenbak.');if(listInterviews().length<=1)throw Error('Laat minimaal één interview actief. Maak eerst een ander interview of herstel er een uit de prullenbak.');
-  const stamp=Date.now(),archiveId=`${stamp}-${id}`,target=path.join(trash,archiveId),project=path.join(target,'project');fs.mkdirSync(project,{recursive:true});
+  const stamp=Date.now(),archiveId=`${stamp}-${id}`,target=path.join(trash,archiveId),project=path.join(target,'project');fs.mkdirSync(id==='demo'?project:target,{recursive:true});
   const moved=[];try{
    if(id==='demo'){for(const name of builtInFiles){const from=path.join(data,name);if(fs.existsSync(from)){const to=path.join(project,name);fs.renameSync(from,to);moved.push(name);}}}
    else{fs.renameSync(projectRoot,project);moved.push('project');}

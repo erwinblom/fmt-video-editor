@@ -13,7 +13,7 @@ function idle(){
  }}};visit(home);
 }
 function dirty(){return git(['status','--porcelain','--untracked-files=all']).stdout.trim();}
-function tracking(){const r=git(['rev-parse','--abbrev-ref','--symbolic-full-name','@{u}'],{allowFailure:true});if(r.status!==0)throw Error('Deze softwarekopie is nog niet gekoppeld. Laat Chief de privé-repository aansluiten.');return r.stdout.trim();}
+function tracking(){const r=git(['rev-parse','--abbrev-ref','--symbolic-full-name','@{u}'],{allowFailure:true});if(r.status!==0)throw Error('Deze softwarekopie is nog niet gekoppeld. Koppel eerst je eigen repository.');return r.stdout.trim();}
 try{
  if(action==='status'){console.log(git(['status','--short','--branch']).stdout);process.exit(0);}
  if(!['haal','deel'].includes(action))throw Error('Kies status, haal of deel.');
@@ -27,11 +27,11 @@ try{
  if(action==='haal'){
   const iconCheck=spawnSync(process.execPath,['scripts/check-app-icon.mjs'],{cwd:projectRoot,stdio:'inherit'});if(iconCheck.status!==0)throw Error('Appiconencontrole mislukt; update gestopt.');
   git(['merge','--ff-only',upstream]);
-  const install=spawnSync('npm',['ci'],{cwd:projectRoot,stdio:'inherit'});if(install.status!==0)throw Error('Software opgehaald, maar installatie niet voltooid. Start Installeer FMT Video Editor.command.');
+  const install=spawnSync(process.platform==='win32'?'npm.cmd':'npm',['ci'],{cwd:projectRoot,stdio:'inherit',shell:process.platform==='win32'});if(install.status!==0)throw Error('Software opgehaald, maar installatie niet voltooid. Voer node scripts/install.mjs uit.');
   if(process.platform==='darwin'){const app=spawnSync(process.execPath,['scripts/make-mac-app.mjs'],{cwd:projectRoot,stdio:'inherit'});if(app.status!==0)throw Error('Software opgehaald, maar Mac-startapp niet bijgewerkt. Voer npm run app:mac uit.');}
   console.log('Software bijgewerkt. Video’s en projecten zijn behouden. Herstart de editor om de nieuwe versie te gebruiken.');
  }else{
-  if(git(['merge-base','--is-ancestor',upstream,'HEAD'],{allowFailure:true}).status!==0)throw Error('De andere Mac heeft al wijzigingen gedeeld. Laat Chief beide versies samenvoegen; er is niets overschreven.');
+  if(git(['merge-base','--is-ancestor',upstream,'HEAD'],{allowFailure:true}).status!==0)throw Error('De andere computer heeft al wijzigingen gedeeld. Laat Chief beide versies samenvoegen; er is niets overschreven.');
   git(['add','--all']);
   assertSharedFiles();assertSharedFiles({history:true});
   const icons=spawnSync(process.execPath,['scripts/check-app-icon.mjs'],{cwd:projectRoot,stdio:'inherit'});if(icons.status!==0)throw Error('Appiconencontrole mislukt; er is niets gedeeld.');
@@ -40,7 +40,7 @@ try{
   if(git(['diff','--cached','--quiet'],{allowFailure:true}).status!==0)git(['commit','-m',process.argv[3]||'Werk FMT Video Editor bij']);
   assertSharedFiles({history:true});
   git(['push',remote,`HEAD:refs/heads/${branch}`]);
-  console.log('Softwarewijzigingen gedeeld. Haal ze op de andere Mac op. Video’s en projecten blijven lokaal.');
+  console.log('Softwarewijzigingen gedeeld. Haal ze op de andere computer op. Video’s en projecten blijven lokaal.');
  }
  }finally{fs.rmSync(lock,{force:true});}
 }catch(e){console.error('\n'+e.message);process.exitCode=1;}

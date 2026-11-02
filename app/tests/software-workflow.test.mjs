@@ -12,7 +12,7 @@ function fixture(t){
  const run=(cwd,cmd,args,ok=true)=>{const r=spawnSync(cmd,args,{cwd,env,encoding:'utf8',timeout:60000});if(ok)assert.equal(r.status,0,r.stdout+'\n'+r.stderr);return r;};
  const git=(cwd,...args)=>run(cwd,'git',args);
  fs.mkdirSync(path.join(a,'scripts'),{recursive:true});fs.mkdirSync(path.join(a,'app/tests'),{recursive:true});
- for(const f of ['scripts/software.mjs','scripts/check-shared-files.mjs','app/runtime-config.mjs','.gitignore'])fs.copyFileSync(path.join(source,f),path.join(a,f));
+ for(const f of ['scripts/software.mjs','scripts/check-shared-files.mjs','app/runtime-config.mjs','.gitignore','.gitattributes'])fs.copyFileSync(path.join(source,f),path.join(a,f));
  const iconFiles=['scripts/check-app-icon.mjs','scripts/make-mac-app.mjs','app-icon.svg','app-icon.png','app-icon.icns','app-icon-192.png','app-icon-512.png','app.webmanifest','app-icon-hashes.json','index.html','welcome.html','licenses.html'].map(f=>f.startsWith('scripts/')?f:'app/public/'+f);
  for(const f of iconFiles){fs.mkdirSync(path.dirname(path.join(a,f)),{recursive:true});fs.copyFileSync(path.join(source,f),path.join(a,f));}
  fs.writeFileSync(path.join(a,'app/example.mjs'),'export const version=1;\n');
@@ -26,7 +26,7 @@ function fixture(t){
 test('software A → repository → B → repository → A preserves different local projects and settings',t=>{
  const f=fixture(t),beforeA=fs.readFileSync(path.join(f.a,'app/data/montages.json'),'utf8'),beforeB=fs.readFileSync(path.join(f.b,'app/data/montages.json'),'utf8');
  fs.writeFileSync(path.join(f.a,'app/example.mjs'),'export const version=2;\n');assert.equal(f.action(f.a,'deel').status,0);
- assert.equal(f.action(f.b,'haal').status,0);assert.match(fs.readFileSync(path.join(f.b,'app/example.mjs'),'utf8'),/version=2/);
+ {const result=f.action(f.b,'haal');assert.equal(result.status,0,result.stdout+'\n'+result.stderr);}assert.match(fs.readFileSync(path.join(f.b,'app/example.mjs'),'utf8'),/version=2/);
  fs.appendFileSync(path.join(f.b,'app/example.mjs'),'export const secondMac=true;\n');assert.equal(f.action(f.b,'deel').status,0);assert.equal(f.action(f.a,'haal').status,0);
  assert.equal(fs.readFileSync(path.join(f.a,'app/data/montages.json'),'utf8'),beforeA);assert.equal(fs.readFileSync(path.join(f.b,'app/data/montages.json'),'utf8'),beforeB);
  for(const dir of [f.a,f.b]){assert.equal(fs.readFileSync(path.join(dir,'.env.local'),'utf8'),'OPENAI_API_KEY=local-test-placeholder');assert.equal(f.git(dir,'ls-files','app/data','.env.local').stdout,'');}
