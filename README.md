@@ -1,16 +1,24 @@
 # FMT Video Editor
 
-Een lokale editor voor interviews: knippen, ordenen, ondertitelen, video exporteren en een thumbnail maken. **De basis werkt zonder Desert Ant Labs, Auphonic of een cloudaccount.** Extra modellen kunnen werk versnellen; zij zijn geen voorwaarde om je opname te monteren.
+## Maak van je interview een video om te delen
 
-Ik maakte dit met AI omdat ik het zelf nodig had. Ik ben geen programmeur en geen designer. Ik deel dit om te laten zien wat mogelijk is en je op gang te helpen. Gebruik het als vertrekpunt: bouw erop voort en maak het naar je eigen maat.
+Kies de fragmenten die je wilt gebruiken, zet ze in de juiste volgorde en voeg ondertitels toe. Bewaar je montage als video en maak er een thumbnail bij.
 
-**Lokale video-editor voor Mac, Windows en Linux.** Je werkt in je browser; video’s en montages blijven in de map van de editor op je eigen computer. Dit is een bronuitgave: je installeert eerst de hulpmiddelen hieronder. De [platformcontrole](PLATFORM.md) beschrijft precies welke routes zijn getest.
+![FMT Video Editor in gebruik: interviewmontage met hoofdstukken, ondertitels en cijferkaart](docs/images/fmt-video-editor.png)
 
-[Download de nieuwste uitgave](https://github.com/erwinblom/fmt-video-editor/releases/tag/v0.2.0-preview.1) · [Probleem melden](https://github.com/erwinblom/fmt-video-editor/issues)
+*Een echt gebruiksvoorbeeld uit mijn eigen editor. Het interview wordt niet meegeleverd. Jouw installatie begint leeg; je kunt ook een fictieve demo proberen.*
 
-![FMT Video Editor met interviewmontage, hoofdstukken, ondertitels en cijferkaart](docs/images/fmt-video-editor.png)
+**[Download Video Editor voor Mac, Windows en Linux](https://github.com/erwinblom/fmt-video-editor/releases/download/v0.2.0-preview.1/FMT-Video-Editor-bron-v0-2-0-preview-1.zip)**
 
-*Een echt gebruiksvoorbeeld uit mijn eigen editor. Het interview wordt niet meegeleverd. Jouw nieuwe installatie begint leeg; je kunt ook een fictieve demo proberen.*
+**Proefversie — eenmalige installatie nodig.** Dit is een bronpakket, geen kant-en-klare app. Je installeert eerst Node.js, Python, FFmpeg en Chrome volgens de uitleg hieronder. Daarna werk je lokaal in je browser. Je video's en montages blijven op je computer.
+
+## Van opname naar resultaat
+
+| 1. Kies je opname | 2. Maak je montage | 3. Bewaar je resultaat |
+|---|---|---|
+| Voeg video of audio toe. | Knip, orden en schrijf ondertitels. | Exporteer een MP4 en maak een thumbnail. |
+
+De basis werkt zonder AI-account of betaalde dienst. Extra hulpmiddelen voor automatische transcriptie en andere voorstellen zijn optioneel.
 
 ## Wat je ermee kunt
 
@@ -58,7 +66,11 @@ Open **Exporteer video → YouTube-thumbnail**. Kies een tijdstip in seconden en
 
 Bij **Interviewinstellingen → Eigen stijl** kun je een eigen naam, website en logo bewaren of weer leegmaken. Kaarten gebruiken deze eigen stijl; de thumbnail neemt het gekozen logo over. Standaard is de uitvoer merkloos. Na een stijlwijziging bewaar je de thumbnail opnieuw. De FMT-naam en het icoon blijven bij het gereedschap zelf.
 
-## Beter met optionele hulpmiddelen
+## Extra mogelijkheden met AI
+
+<details>
+<summary>Bekijk optionele transcriptie, modellen en audiodiensten</summary>
+
 
 | Aanvulling | Wat je erbij krijgt | Wat zonder deze aanvulling blijft werken |
 |---|---|---|
@@ -74,9 +86,15 @@ Desert Ant: de meegeleverde Voz/Who-installer is voor macOS. Deze extra route is
 
 Cloud staat standaard uit met `FMT_ALLOW_CLOUD=0`. Alleen wanneer je zelf cloudfuncties wilt gebruiken, stel je je eigen verbinding en sleutels in volgens PRIVACY.md. Er worden geen makersaccounts of tegoeden meegeleverd. Auphonic is aanvullend: lokale export moet ook blijven werken wanneer de dienst niet is geïnstalleerd, geen account heeft of faalt. Auphonic vraagt daarnaast de expliciete keuze `FMT_AUDIO_MASTERING=auphonic`; de standaard is `local`. Bij een fout blijft de lokale mix beschikbaar en meldt de export de terugval. Cloud inschakelen voor tekst activeert dus niet automatisch audiomastering.
 
+</details>
+
 ## Begeleidend: de interviewskill
 
 In `skills/fmt-interview-video/SKILL.md` staat de werkwijze voor een AI-assistent: bronvaste selectie, expliciete redactionele keuzes, menselijke luistercontrole, export en thumbnail. Geef je AI-assistent het bronpakket en vraag hem deze skill te gebruiken. In een omgeving met skillondersteuning kun je de complete map `fmt-interview-video` als skill installeren; een gewone chat kan de tekst als werkinstructie lezen. De skill installeert geen editor, modellen of accounts en verleent geen publicatietoestemming.
+
+## Waarom ik dit deel
+
+Ik maakte dit met AI omdat ik het zelf nodig had. Ik ben geen programmeur en geen designer. Ik deel dit om te laten zien wat mogelijk is en je op gang te helpen. Gebruik het als vertrekpunt: bouw erop voort en maak het naar je eigen maat.
 
 ## Zo pas je Video Editor aan
 
