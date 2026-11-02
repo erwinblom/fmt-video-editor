@@ -26,7 +26,7 @@ try{
  const sharp=(await import('sharp')).default;const size=await sharp(jpg).metadata();assert.equal(size.width,1280);assert.equal(size.height,720);fs.writeFileSync('platform-evidence/thumbnail.jpg',jpg);proof.thumbnail=true;
  browser=await puppeteer.launch({executablePath:await findEvidenceBrowser(),headless:true,args:['--no-sandbox']});
  const importPage=await browser.newPage();await importPage.setViewport({width:1440,height:1000});await importPage.goto(url,{waitUntil:'networkidle0'});
- await importPage.click('#newInterview');await (await importPage.$('#uploadDialog input[name=media]')).uploadFile('app/data/demo/source.mp4');await importPage.type('#uploadDialog input[name=title]','Platformimport café');await importPage.click('#uploadStart');
+ await importPage.click('#settingsOpen');await importPage.click('#newInterview');await (await importPage.$('#uploadDialog input[name=media]')).uploadFile('app/data/demo/source.mp4');await importPage.type('#uploadDialog input[name=title]','Platformimport café');await importPage.click('#uploadStart');
  await importPage.waitForSelector('#openInterview:not([hidden])',{timeout:120000});await importPage.click('#openInterview');await importPage.waitForFunction(()=>new URL(location.href).searchParams.has('project'));
  const project=new URL(importPage.url()).searchParams.get('project');assert.notEqual(project,'demo');proof.guiImport=true;
  let imported=await api('/api/state?project='+project);imported.modes[imported.mode].blocks[0].title='Mijn opgeslagen hoofdstuk';imported=(await api('/api/state?project='+project,imported)).state;
