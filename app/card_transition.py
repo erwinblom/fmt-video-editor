@@ -15,7 +15,7 @@ def apply_card_transition(ff,clip,card,a,b,source,frame,assets,work,encoder,run)
         # The card replaces the top 900 px; the last quote's caption stays on its audio clock.
         graph=f"[0:v]split=2[p][t];[p]trim=end_frame={a['frames']-n},setpts=PTS-STARTPTS[prefix];[t]trim=start_frame={a['frames']-n},setpts=PTS-STARTPTS[tail];[1:v]trim=end_frame={n},setpts=PTS-STARTPTS,crop=1920:900:0:0[top];[tail][top]overlay=0:0:shortest=1[overlap];[prefix][overlap]concat=n=2:v=1:a=0[out]"
         run([ff,'-v','error','-y','-i',clip,'-i',card,'-filter_complex_threads','1','-filter_complex',graph,'-map','[out]','-frames:v',str(a['frames']),*encoder,out_a])
-        graph=f"trim=start_frame={n},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop={n},trim=end_frame={b['frames']}"
+        graph=f"trim=start_frame={n},setpts=PTS-STARTPTS,fps=25,tpad=stop_mode=clone:stop=-1,trim=end_frame={b['frames']},setpts=N/(25*TB)"
         run([ff,'-v','error','-y','-i',card,'-vf',graph,'-frames:v',str(b['frames']),*encoder,out_b])
     else:
         cont=copy.deepcopy(a);cont['sourceStart']=a['sourceStart']+a['frames']/25;cont['sourceEnd']=cont['sourceStart']+n/25;cont['frames']=n;cont['duration']=n/25;cont.pop('visualSegments',None)
