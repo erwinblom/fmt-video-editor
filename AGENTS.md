@@ -1,4 +1,4 @@
-# FMT Video Editor - lokale publicatiekandidaat
+# FMT Video Editor - openbare distributiebron
 
 Lees README.md, PROJECT.md, PUBLICATIESTATUS.md en REDACTIEREGELS.md.
 
@@ -14,4 +14,4 @@ Lees README.md, PROJECT.md, PUBLICATIESTATUS.md en REDACTIEREGELS.md.
 Behoud de FMT-familie: witte tegel, zwart videoframe met montageblokken en canoniek target rechtsboven met rode stip. Browser/PWA en Mac-startapp gebruiken app/public/app-icon.* en app.webmanifest. npm test controleert bronhashes en verwijzingen. Neem alle icoonassets en scripts/make-mac-app.mjs mee in iedere download; installeer/werk de Mac-startapp bij met npm run app:mac. Dit verandert geen uitvoerstijl.
 
 ## Openbare bronproef CH-394
-De bronproef v0.1.0-preview.1 is op verzoek van Erwin voorbereid voor erwinblom/fmt-video-editor. Gebruik npm run source:check voor het exacte pakket. candidate:check geldt alleen voor de lokale bronkandidaat zonder remote; release:check blijft voor een stabiele volledige uitgave geblokkeerd. Publiceer latere wijzigingen uitsluitend op opdracht. Het README-screenshot is expliciet aangeleverd voor deze presentatie, geen vrij te gebruiken testfixture.
+De bronproef v0.1.0-preview.1 is op verzoek van Erwin voorbereid voor erwinblom/fmt-video-editor. Gebruik npm run source:check voor het exacte pakket. candidate:check accepteert uitsluitend de vaste openbare origin erwinblom/fmt-video-editor; release:check blijft voor een stabiele volledige uitgave geblokkeerd. Publiceer latere wijzigingen uitsluitend op opdracht. Het README-screenshot is expliciet aangeleverd voor deze presentatie, geen vrij te gebruiken testfixture.

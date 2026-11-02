@@ -23,14 +23,15 @@ try{
   if(r.stdout.subarray(0,8192).includes(0))continue;
   texts++;if(sensitive.some(p=>p.test(r.stdout.toString('utf8'))))throw Error('Mogelijk geheim in '+name+'; waarde wordt niet getoond.');
  }
- if(git(['remote']))throw Error('Deze lokale publicatiekandidaat hoort geen remote te hebben.');
+ const remotes=git(['remote','-v']);
+ if(remotes && remotes.split('\n').some(line=>!/^origin\s+https:\/\/github\.com\/erwinblom\/fmt-video-editor(?:\.git)?\s+\((?:fetch|push)\)$/.test(line)))throw Error('Onverwachte publicatieremote.');
  const title=fs.readFileSync(path.join(root,'README.md'),'utf8');
- if(!title.includes('publicatiekandidaat'))throw Error('Publicatiestatus ontbreekt.');
+ if(!title.includes('platformcontrole'))throw Error('Platformbewijsverwijzing ontbreekt.');
  for(const name of ['synthetic-editorial','synthetic-format','synthetic-full-format']){
   const f=JSON.parse(fs.readFileSync(path.join(root,'app/tests/fixtures',name+'.json')));
   if(f.synthetic!==true||f.transcriptHash)throw Error('Fixture is niet als fictief gemarkeerd: '+name);
  }
  const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json')));
- console.log(JSON.stringify({candidateChecksPassed:true,files:files.length,historyCommits:Number(git(['rev-list','--count','HEAD'])),textBlobsScanned:texts,remotes:0,publicationReady:false,reason:'Overige asset-/pakketvoorwaarden, schone installatie en expliciete publicatievrijgave blijven open.'},null,2));
+ console.log(JSON.stringify({candidateChecksPassed:true,files:files.length,historyCommits:Number(git(['rev-list','--count','HEAD'])),textBlobsScanned:texts,remotes:remotes?1:0,publicationReady:false,reason:'Repositorycontrole geslaagd; PLATFORM.md en PUBLICATIESTATUS.md bepalen de geteste preview-scope. Geen stabiele volledige uitgave of runtimebundel.'},null,2));
  if(process.argv.includes('--release'))process.exitCode=2;
 }catch(error){console.error(error.message);process.exitCode=1;}

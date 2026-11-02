@@ -37,5 +37,9 @@ try{
  assert.equal(result.status,'complete',JSON.stringify(result));
  fs.writeFileSync('platform-evidence/imported.mp4',Buffer.from(await (await fetch(url+'/api/exports/'+importedJob.id+'/video?project='+project)).arrayBuffer()));
  const importedDecode=spawnSync('ffmpeg',['-v','error','-i','platform-evidence/imported.mp4','-f','null','-'],{encoding:'utf8'});assert.equal(importedDecode.status,0,importedDecode.stderr);proof.importedExportDecoded=true;
+ await stop();
+ const launcher=spawn(process.execPath,['scripts/start.mjs'],{stdio:'inherit',env:{...process.env,FMT_NO_OPEN:'1'}});
+ try{let ready=false;for(let i=0;i<100;i++){try{if((await fetch(url+'/api/health')).ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,200));}assert.ok(ready,'Cross-platform launcher starts server');proof.launcher=true;}
+ finally{if(process.platform==='win32')spawnSync('taskkill',['/pid',String(launcher.pid),'/T','/F']);else launcher.kill('SIGTERM');}
  fs.writeFileSync('platform-evidence/result.json',JSON.stringify(proof,null,2));
 }finally{if(browser)await browser.close();if(server&&server.exitCode===null)await stop();}
