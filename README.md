@@ -1,8 +1,6 @@
 # FMT Video Editor
 
-## Maak van je interview een video om te delen
-
-Kies de fragmenten die je wilt gebruiken, zet ze in de juiste volgorde en voeg ondertitels toe. Bewaar je montage als video en maak er een thumbnail bij.
+**Maak van je interview een video om te delen: kies fragmenten, zet ze in volgorde en voeg ondertitels toe.**
 
 ![FMT Video Editor in gebruik: interviewmontage met hoofdstukken, ondertitels en cijferkaart](docs/images/fmt-video-editor.png)
 
@@ -10,9 +8,13 @@ Kies de fragmenten die je wilt gebruiken, zet ze in de juiste volgorde en voeg o
 
 **[Download Video Editor voor Mac, Windows en Linux](https://github.com/erwinblom/fmt-video-editor/releases/download/v0.2.0-preview.1/FMT-Video-Editor-bron-v0-2-0-preview-1.zip)**
 
+Gratis · Geen account · Je video's blijven op je computer
+
+> **Voor gevorderden, en te personaliseren.** Het werkt zoals het is en je kunt het naar je eigen hand zetten, maar je installeert eerst vier programma's. Zoek je een makkelijker begin, probeer dan [Kladblok](https://github.com/erwinblom/kladblok) of [Screenshot Editor](https://github.com/erwinblom/screenshot-editor). [Spring naar: maak het van jezelf](#maak-het-van-jezelf).
+
 **Proefversie — eenmalige installatie nodig.** Dit is een bronpakket, geen kant-en-klare app. Je installeert eerst Node.js, Python, FFmpeg en Chrome volgens de uitleg hieronder. Daarna werk je lokaal in je browser. Je video's en montages blijven op je computer.
 
-## Van opname naar resultaat
+## Beginnen
 
 | 1. Kies je opname | 2. Maak je montage | 3. Bewaar je resultaat |
 |---|---|---|
@@ -20,20 +22,13 @@ Kies de fragmenten die je wilt gebruiken, zet ze in de juiste volgorde en voeg o
 
 De basis werkt zonder AI-account of betaalde dienst. Extra hulpmiddelen voor automatische transcriptie en andere voorstellen zijn optioneel.
 
-## Wat je ermee kunt
-
-- Video of audio importeren, fragmenten knippen en de volgorde veranderen.
-- Ondertitels zelf schrijven, de montage controleren en een MP4 bewaren.
-- Een beeld uit de opname kiezen en er een YouTube-thumbnail van maken.
-- Met **Eigen stijl** je eigen naam, logo en website gebruiken. Zonder instellingen blijft je uitvoer merkloos.
-
-## Wat je nodig hebt
+### Wat je nodig hebt
 
 Installeer [Node.js LTS](https://nodejs.org/en/download) (22.16 of nieuwer), [Python](https://www.python.org/downloads/) (3.11 of nieuwer), [FFmpeg met ffprobe](https://ffmpeg.org/download.html) en [Google Chrome](https://www.google.com/chrome/) of Chromium. Bij Python op Windows vink je **Add Python to PATH** aan. FFmpeg en ffprobe moeten vanuit een terminal bereikbaar zijn. Op Ubuntu kun je Python, venv en FFmpeg installeren met `sudo apt install python3 python3-venv ffmpeg`; op een Mac met Homebrew met `brew install python ffmpeg`.
 
 De eerste installatie haalt softwarepakketten op en vraagt internet. Handmatig monteren en exporteren werken daarna lokaal, zonder AI-account of betaalde dienst. Je hebt voldoende vrije schijfruimte nodig voor bronvideo’s, werkbestanden en exports; een lange opname kan meerdere gigabytes vragen.
 
-## Installeren en beginnen
+### Installeren en starten
 
 1. Download het bron-ZIP bij de nieuwste uitgave en pak het volledig uit in een eigen map. Gebruik voor een nieuwe versie een nieuwe map; overschrijf je bestaande projecten niet.
 2. Open het installatiebestand voor jouw systeem:
@@ -50,7 +45,7 @@ De eerste installatie haalt softwarepakketten op en vraagt internet. Handmatig m
 
 Als je systeem een gedownload script tegenhoudt, lees de melding en gebruik desgewenst de Node-opdrachten hierboven. Schakel geen algemene beveiliging uit. `node scripts/check-installation.mjs` vertelt welk hulpmiddel eventueel ontbreekt.
 
-## Eerste resultaat zonder extra diensten
+### Eerste resultaat zonder extra diensten
 
 1. Voeg een video of audio-opname toe. Kies bij **Werkwijze → Zelf monteren — zonder AI of diensten**.
 2. De editor maakt werkfragmenten van maximaal dertig seconden in bronvolgorde. Dit zijn geen voorgestelde goede knippen en geen transcript. Beluister de opname en pas begin, einde en volgorde zelf aan. Er is geen sprekerherkenning of inhoudelijke selectie geclaimd.
@@ -60,13 +55,20 @@ Als je systeem een gedownload script tegenhoudt, lees de melding en gebruik desg
 
 Wijzigingen worden bij het interview bewaard. Sluit en heropen om je montage terug te vinden. Bewaar de hele `app/data/`-map van deze installatie als je projecten wilt behouden of verplaatsen; die bevat bronmedia, montages en ondersteunende bestanden. Verplaats geen gegevens uit een andere editor over deze map heen.
 
-## Thumbnail en eigen stijl
+## Wat kun je ermee
+
+- Video of audio importeren, fragmenten knippen en de volgorde veranderen.
+- Ondertitels zelf schrijven, de montage controleren en een MP4 bewaren.
+- Een beeld uit de opname kiezen en er een YouTube-thumbnail van maken.
+- Met **Eigen stijl** je eigen naam, logo en website gebruiken. Zonder instellingen blijft je uitvoer merkloos.
+
+### Thumbnail en eigen stijl
 
 Open **Exporteer video → YouTube-thumbnail**. Kies een tijdstip in seconden en **Gebruik dit bronbeeld**. Voeg een korte titel toe, kies **Bewaar thumbnail** en download de JPG van 1280 × 720. Het beeld gebruikt het opgeslagen ruime gastkader of anders het volledige bronbeeld. Beeldkeuze en titel blijven bewaard.
 
 Bij **Interviewinstellingen → Eigen stijl** kun je een eigen naam, website en logo bewaren of weer leegmaken. Kaarten gebruiken deze eigen stijl; de thumbnail neemt het gekozen logo over. Standaard is de uitvoer merkloos. Na een stijlwijziging bewaar je de thumbnail opnieuw. De FMT-naam en het icoon blijven bij het gereedschap zelf.
 
-## Extra mogelijkheden met AI
+### Extra mogelijkheden met AI
 
 <details>
 <summary>Bekijk optionele transcriptie, modellen en audiodiensten</summary>
@@ -88,15 +90,17 @@ Cloud staat standaard uit met `FMT_ALLOW_CLOUD=0`. Alleen wanneer je zelf cloudf
 
 </details>
 
-## Begeleidend: de interviewskill
+### Begeleidend: de interviewskill
 
 In `skills/fmt-interview-video/SKILL.md` staat de werkwijze voor een AI-assistent: bronvaste selectie, expliciete redactionele keuzes, menselijke luistercontrole, export en thumbnail. Geef je AI-assistent het bronpakket en vraag hem deze skill te gebruiken. In een omgeving met skillondersteuning kun je de complete map `fmt-interview-video` als skill installeren; een gewone chat kan de tekst als werkinstructie lezen. De skill installeert geen editor, modellen of accounts en verleent geen publicatietoestemming.
 
-## Waarom ik dit deel
+## Maak het van jezelf
 
-Ik maakte dit met AI omdat ik het zelf nodig had. Ik ben geen programmeur en geen designer. Ik deel dit om te laten zien wat mogelijk is en je op gang te helpen. Gebruik het als vertrekpunt: bouw erop voort en maak het naar je eigen maat.
+**Zonder code:** bij **Interviewinstellingen → Eigen stijl** kies je je eigen naam, website en logo.
 
-## Zo pas je Video Editor aan
+**De vormgeving van de video** is vastgelegd in `template/template.json`: afmetingen, kleuren, lettertype en de plek van beeld, ondertitels en logo. Vraag je AI welke waarden je kunt veranderen en probeer het eerst met de fictieve demo (`npm run demo`).
+
+**Met AI als bouwmaatje:**
 
 Je hoeft geen programmeur te zijn om een eerste eigen aanpassing te proberen. Begin bijvoorbeeld met grotere knoppen, andere kleuren of een andere standaardtitel.
 
@@ -108,9 +112,30 @@ Je hoeft geen programmeur te zijn om een eerste eigen aanpassing te proberen. Be
 
 Deel de software met de AI, geen privé-interviews, persoonlijke instellingen of sleutels.
 
-> Dit is het bronpakket van FMT Video Editor. Lees README.md en de relevante bestanden. Mijn eerste wens is: [één concrete wijziging]. Werk in een aparte kopie. Behoud de bestaande functies, mijn gegevens, licenties en de zelfstandige basis zonder externe diensten. Bouw of start de gewijzigde kopie, doorloop bewaren/heropenen en controleer de uitvoer. Publiceer of verstuur niets. Vertel wat je echt hebt getest en wat nog openstaat.
+> Dit is het bronpakket van FMT Video Editor. Lees eerst AGENTS.md en README.md. Mijn eerste wens is: [één concrete wijziging]. Werk in een aparte kopie. Behoud wat volgens AGENTS.md heel moet blijven, en mijn gegevens. Bouw of start de gewijzigde kopie, doorloop bewaren/heropenen en controleer de uitvoer. Publiceer of verstuur niets. Vertel wat je echt hebt getest en wat nog openstaat.
 
 Geen bruikbare download uit je chat? Vraag voor een kleine wijziging om de exacte bestandsnaam en welke tekst je moet vervangen. Deel nooit eigen interviews, sleutels of privégegevens als dat niet nodig is. Meld een reproduceerbaar probleem via [GitHub Issues](https://github.com/erwinblom/fmt-video-editor/issues). Er wordt geen supportdienst beloofd.
+
+**Ideeën, van makkelijk naar ambitieus:**
+
+1. Andere kleuren of grotere knoppen in de editor.
+2. Een andere achtergrond- en accentkleur voor je video's, via `template/template.json`.
+3. Je eigen logo op een andere plek in beeld.
+4. Een staand formaat voor sociale media naast het brede formaat.
+5. Een eigen soort kaart tussen de fragmenten, bijvoorbeeld voor een citaat.
+6. De interviewskill aanpassen aan jouw manier van monteren.
+
+## Waar blijft mijn werk
+
+Je video's, montages en exports staan lokaal in `app/data/` van deze installatie. Bewaar die hele map als je projecten wilt behouden of verplaatsen. Er is geen upload en geen account; cloudfuncties staan standaard uit. Lees PRIVACY.md voor de details.
+
+## Grenzen
+
+- Dit is een proefversie en een bronpakket, geen kant-en-klare app.
+- De basis is op drie systemen getest; zie de [platformcontrole](PLATFORM.md) voor wat de proef wel en niet bewijst.
+- De aanvullende modellen van Desert Ant zijn alleen voor macOS voorbereid.
+- Er is geen proef met een beginnende gebruiker uitgevoerd.
+- Alleen bewezen controles staan in PUBLICATIESTATUS.md.
 
 ## Als iets niet werkt
 
@@ -119,7 +144,11 @@ Geen bruikbare download uit je chat? Vraag voor een kleine wijziging om de exact
 - Cloud- of modeltoestemming geweigerd: blijf in de basisroute, of lees eerst de voorwaarden en stel daarna bewust de gewenste aanvulling in.
 - Export gewijzigd of verouderd: maak na de relevante montage- of stijlwijziging een nieuwe uitvoer. Een oude download verandert niet vanzelf.
 
-## Vrijheid, privacy en controles
+## Waarom ik dit deel
+
+Ik maakte dit met AI omdat ik het zelf nodig had. Ik ben geen programmeur en geen designer. Ik deel dit om te laten zien wat mogelijk is en je op gang te helpen. Gebruik het als vertrekpunt: bouw erop voort en maak het naar je eigen maat.
+
+## Licentie en credits
 
 Eigen code en technische documentatie: MIT, zie LICENSE. FMT-naam en logo: afzonderlijk MERKVOORWAARDEN.md. Fonts, HyperFrames, GSAP en alle overige onderdelen houden hun eigen voorwaarden. Desert Ant is geen onderdeel dat wij onder MIT herlicentiëren. Zie THIRD_PARTY_NOTICES.md, MODELVOORWAARDEN.md en PRIVACY.md. Je hoeft eigen aanpassingen niet terug te leveren.
 
