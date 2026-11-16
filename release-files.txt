@@ -187,6 +187,7 @@ app/voz-language.mjs
 app/voz-node.mjs
 docs/DESERT-ANT-REACTIE.md
 docs/FMT-LOGO-BEVESTIGING.md
+docs/ONDERHOUD.md
 docs/PUBLICATIE-HISTORIE.md
 docs/RECHTEN-CONTROLE.md
 docs/SCREENSHOT.md
