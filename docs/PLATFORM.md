@@ -1,14 +1,14 @@
 # Platformcontrole
 
-## Getest op 2 november 2026
+## Getest op 16 november 2026
 
 | Platform | Schone installatie | Softwaretests | Browserimport, bewaren/herstart, MP4 en thumbnail |
 |---|---|---|---|
-| macOS 14, ARM | Geslaagd | 275 geslaagd | Geslaagd |
+| macOS 15.8.2, ARM64 | Geslaagd | 275 geslaagd | Geslaagd |
 | Windows Server 2022, x64 | Geslaagd | 275 geslaagd | Geslaagd |
 | Ubuntu 24.04, x64 | Geslaagd | 275 geslaagd | Geslaagd |
 
-Gebruikt: Node 22, Python 3.12, FFmpeg en Chrome. [De volledige matrix](https://github.com/erwinblom/fmt-video-editor/actions/runs/41519563569) bewijst de gebruikersroutes op alle drie systemen. Alleen de Windows-testopruiming had in die ronde nog een bestandsvergrendeling na een geslaagde exporttest. [De gerichte Windows-herproef](https://github.com/erwinblom/fmt-video-editor/actions/runs/41520512109) controleert de opgeloste testopruiming. De productcode is tussen deze runs ongewijzigd.
+Gebruikt: Node 22, Python 3.12, FFmpeg en Chrome. [De volledige matrix van 16 november](https://github.com/erwinblom/fmt-video-editor/actions/runs/43864802648) bewijst deze gebruikersroutes op alle drie systemen. De eerdere controle van 2 november gebruikte macOS 14; een afzonderlijke Windows-herproef controleerde toen de testopruiming.
 
 ### Wat de proef werkelijk doet
 
@@ -21,7 +21,7 @@ Gebruikt: Node 22, Python 3.12, FFmpeg en Chrome. [De volledige matrix](https://
 
 Dit combineert echte browserbediening met API-controles; niet iedere bewerking is met muisklikken uitgevoerd. De fictieve opname bevat geen echte spraak, dus deze proef beoordeelt geen transcriptie- of luisterkwaliteit. Er is geen proef met een beginnende gebruiker uitgevoerd, geen bewijs voor iedere Linux-distributie/Windows-desktopversie en geen claim over alle browsers.
 
-![De nieuwe installatie na een echte browserimport op macOS](docs/images/platform-editor.png)
+![De nieuwe installatie na een echte browserimport op macOS](images/platform-editor.png)
 
 *Gegenereerde proefopname, opgeslagen hoofdstuktitel en de normale controlepunten van de editor. Er staan geen persoonlijke interviews in de proef.*
 

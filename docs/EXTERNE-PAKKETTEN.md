@@ -1,6 +1,6 @@
 # Externe pakketten
 
-Gecontroleerd op 21 oktober 2026. Dit is een lokale bronkandidaat, geen toestemming om een complete installatie of appbinary te verspreiden. Eigen FMT-code blijft MIT; onderstaande onderdelen behouden hun eigen rechten. Volledige verzamelde teksten staan in [DEPENDENCY-NOTICES.txt](licenses/DEPENDENCY-NOTICES.txt). De verzameling is aantoonbaar onvolledig voor alle mogelijke native/bundelonderdelen.
+Gecontroleerd op 21 oktober 2026. Dit is een lokale bronkandidaat, geen toestemming om een complete installatie of appbinary te verspreiden. Eigen FMT-code blijft MIT; onderstaande onderdelen behouden hun eigen rechten. Volledige verzamelde teksten staan in [DEPENDENCY-NOTICES.txt](../licenses/DEPENDENCY-NOTICES.txt). De verzameling is aantoonbaar onvolledig voor alle mogelijke native/bundelonderdelen.
 
 ## Wat is gecontroleerd?
 

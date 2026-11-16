@@ -3,7 +3,7 @@ set -eu
 project_dir="$(cd "$(dirname "$0")/.." && pwd)"
 runtime_dir="$project_dir/.runtime-desert-ant"
 revision=9ac125cc4b10696a7ae1d18723fb585b8c025ee1
-print 'Optionele Desert Ant SDK: eigen bronbeschikbare licentie en modelvoorwaarden; lees MODELVOORWAARDEN.md. De demo/export vraagt deze SDK niet.'
+print 'Optionele Desert Ant SDK: eigen bronbeschikbare licentie en modelvoorwaarden; lees docs/MODELVOORWAARDEN.md. De demo/export vraagt deze SDK niet.'
 mkdir -p "$runtime_dir"
 if [[ ! -d "$runtime_dir/sdk/.git" ]]; then
  git clone https://github.com/Desert-Ant-Labs/desert-ant-core.git "$runtime_dir/sdk"

@@ -84,9 +84,9 @@ Bij **Interviewinstellingen → Eigen stijl** kun je een eigen naam, website en 
 
 Whisper: installeer whisper.cpp/`whisper-cli` voor je platform. Op Mac/Linux kun je het vastgelegde model ophalen via `sh scripts/setup-whisper-model.sh`; op Windows download je het model volgens de Whisper-documentatie. Wijs een afwijkend programma of model aan met `FMT_WHISPER_BIN` en `FMT_WHISPER_MODEL` in `.fmt-local.json`. Kies daarna **Whisper** bij import. Segmenttijden zijn geen exact bewezen woordgrenzen. Deze route vereist geen Desert Ant of Auphonic.
 
-Desert Ant: de meegeleverde Voz/Who-installer is voor macOS. Deze extra route is niet voor Windows/Linux bewezen. Lees eerst MODELVOORWAARDEN.md. Modelgebruik vraagt modeldownloads en licentie-/gebruikstelemetrie. De kandidaat weigert SDK-start zolang `FMT_ALLOW_LICENSE_NETWORK` niet bewust op `1` staat in `.fmt-local.json`. Dat blokkeert de SDK vóór starten; de telemetrie wordt niet in de SDK uitgeschakeld. Voz/Who hebben aparte installatie via `scripts/setup-desert-ant.sh`; Eye is een optionele Node-dependency en downloadt zijn model pas bij gebruik. De video en beelden worden lokaal verwerkt. Modelkeuze is geen kwaliteitsgarantie: beoordeel de uitkomst.
+Desert Ant: de meegeleverde Voz/Who-installer is voor macOS. Deze extra route is niet voor Windows/Linux bewezen. Lees eerst docs/MODELVOORWAARDEN.md. Modelgebruik vraagt modeldownloads en licentie-/gebruikstelemetrie. De kandidaat weigert SDK-start zolang `FMT_ALLOW_LICENSE_NETWORK` niet bewust op `1` staat in `.fmt-local.json`. Dat blokkeert de SDK vóór starten; de telemetrie wordt niet in de SDK uitgeschakeld. Voz/Who hebben aparte installatie via `scripts/setup-desert-ant.sh`; Eye is een optionele Node-dependency en downloadt zijn model pas bij gebruik. De video en beelden worden lokaal verwerkt. Modelkeuze is geen kwaliteitsgarantie: beoordeel de uitkomst.
 
-Cloud staat standaard uit met `FMT_ALLOW_CLOUD=0`. Alleen wanneer je zelf cloudfuncties wilt gebruiken, stel je je eigen verbinding en sleutels in volgens PRIVACY.md. Er worden geen makersaccounts of tegoeden meegeleverd. Auphonic is aanvullend: lokale export moet ook blijven werken wanneer de dienst niet is geïnstalleerd, geen account heeft of faalt. Auphonic vraagt daarnaast de expliciete keuze `FMT_AUDIO_MASTERING=auphonic`; de standaard is `local`. Bij een fout blijft de lokale mix beschikbaar en meldt de export de terugval. Cloud inschakelen voor tekst activeert dus niet automatisch audiomastering.
+Cloud staat standaard uit met `FMT_ALLOW_CLOUD=0`. Alleen wanneer je zelf cloudfuncties wilt gebruiken, stel je je eigen verbinding en sleutels in volgens docs/PRIVACY.md. Er worden geen makersaccounts of tegoeden meegeleverd. Auphonic is aanvullend: lokale export moet ook blijven werken wanneer de dienst niet is geïnstalleerd, geen account heeft of faalt. Auphonic vraagt daarnaast de expliciete keuze `FMT_AUDIO_MASTERING=auphonic`; de standaard is `local`. Bij een fout blijft de lokale mix beschikbaar en meldt de export de terugval. Cloud inschakelen voor tekst activeert dus niet automatisch audiomastering.
 
 </details>
 
@@ -127,15 +127,15 @@ Geen bruikbare download uit je chat? Vraag voor een kleine wijziging om de exact
 
 ## Waar blijft mijn werk
 
-Je video's, montages en exports staan lokaal in `app/data/` van deze installatie. Bewaar die hele map als je projecten wilt behouden of verplaatsen. Er is geen upload en geen account; cloudfuncties staan standaard uit. Lees PRIVACY.md voor de details.
+Je video's, montages en exports staan lokaal in `app/data/` van deze installatie. Bewaar die hele map als je projecten wilt behouden of verplaatsen. Er is geen upload en geen account; cloudfuncties staan standaard uit. Lees docs/PRIVACY.md voor de details.
 
 ## Grenzen
 
 - Dit is een proefversie en een bronpakket, geen kant-en-klare app.
-- De basis is op drie systemen getest; zie de [platformcontrole](PLATFORM.md) voor wat de proef wel en niet bewijst.
+- De basis is op drie systemen getest; zie de [platformcontrole](docs/PLATFORM.md) voor wat de proef wel en niet bewijst.
 - De aanvullende modellen van Desert Ant zijn alleen voor macOS voorbereid.
 - Er is geen proef met een beginnende gebruiker uitgevoerd.
-- Alleen bewezen controles staan in PUBLICATIESTATUS.md.
+- Alleen bewezen controles staan in docs/PUBLICATIESTATUS.md.
 
 ## Als iets niet werkt
 
@@ -150,8 +150,8 @@ Ik maakte dit met AI omdat ik het zelf nodig had. Ik ben geen programmeur en gee
 
 ## Licentie en credits
 
-Eigen code en technische documentatie: MIT, zie LICENSE. FMT-naam en logo: afzonderlijk MERKVOORWAARDEN.md. Fonts, HyperFrames, GSAP en alle overige onderdelen houden hun eigen voorwaarden. Desert Ant is geen onderdeel dat wij onder MIT herlicentiëren. Zie THIRD_PARTY_NOTICES.md, MODELVOORWAARDEN.md en PRIVACY.md. Je hoeft eigen aanpassingen niet terug te leveren.
+Eigen code en technische documentatie: MIT, zie LICENSE. FMT-naam en logo: afzonderlijk docs/MERKVOORWAARDEN.md. Fonts, HyperFrames, GSAP en alle overige onderdelen houden hun eigen voorwaarden. Desert Ant is geen onderdeel dat wij onder MIT herlicentiëren. Zie docs/THIRD_PARTY_NOTICES.md, docs/MODELVOORWAARDEN.md en docs/PRIVACY.md. Je hoeft eigen aanpassingen niet terug te leveren.
 
 `npm test` test de software. `npm run source:check` controleert de bestandslijst, bronhashes en mogelijke geheimen in het gedownloade pakket, ook zonder Git. Na eigen wijzigingen zullen hashes afwijken; gebruik dan de softwaretests en controleer de gebruikersroute. `candidate:check` controleert de geschiedenis en de vaste openbare repository. `release:check` blijft geblokkeerd voor een stabiele volledige uitgave zolang de volledige beginners- en aanvullende modelproeven openstaan. De openbare proefversie is uitsluitend een bronuitgave, zonder meegeleverde runtimes of modelgewichten.
 
-Het screenshot is een gebruiksvoorbeeld en valt niet onder de MIT-codelicentie; zie [screenshot en rechten](docs/SCREENSHOT.md). Alleen bewezen controles staan in PUBLICATIESTATUS.md.
+Het screenshot is een gebruiksvoorbeeld en valt niet onder de MIT-codelicentie; zie [screenshot en rechten](docs/SCREENSHOT.md). Alleen bewezen controles staan in docs/PUBLICATIESTATUS.md.

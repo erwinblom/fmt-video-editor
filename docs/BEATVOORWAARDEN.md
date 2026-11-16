@@ -10,7 +10,7 @@ De herkomst is gecontroleerd: de lokale generator gebruikt sinusgolven en ruis, 
 
 ## Vrij hergebruik onder CC0 1.0 Universal
 
-Erwin Blom past **CC0 1.0 Universal** toe op dit bestand, voor zover hij daarover auteursrecht of naburige rechten kan uitoefenen. De volledige, ongewijzigde juridische tekst staat in [licenses/CC0-1.0.txt](licenses/CC0-1.0.txt) en bij de lokale archiefkopie van de beat.
+Erwin Blom past **CC0 1.0 Universal** toe op dit bestand, voor zover hij daarover auteursrecht of naburige rechten kan uitoefenen. De volledige, ongewijzigde juridische tekst staat in [licenses/CC0-1.0.txt](../licenses/CC0-1.0.txt) en bij de lokale archiefkopie van de beat.
 
 Je mag de beat gebruiken, kopiëren, knippen, aanpassen, remixen en verspreiden, ook los van deze app en ook commercieel. Je hoeft geen toestemming te vragen, vergoeding te betalen, je wijzigingen terug te delen of Erwin/FMT te vermelden in je video, aftiteling of beschrijving. Een vrijwillige bronvermelding is welkom.
 

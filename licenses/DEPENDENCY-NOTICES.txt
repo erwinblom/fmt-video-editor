@@ -1,6 +1,6 @@
 EXTERNAL DEPENDENCY NOTICES — audit snapshot 2026-10-21
 
-These collected texts are not a complete runtime redistribution clearance. See EXTERNE-PAKKETTEN.md. Exact third-party license texts follow unchanged.
+These collected texts are not a complete runtime redistribution clearance. See docs/EXTERNE-PAKKETTEN.md. Exact third-party license texts follow unchanged.
 
 
 ========================================================================

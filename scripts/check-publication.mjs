@@ -32,6 +32,6 @@ try{
   if(f.synthetic!==true||f.transcriptHash)throw Error('Fixture is niet als fictief gemarkeerd: '+name);
  }
  const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json')));
- console.log(JSON.stringify({candidateChecksPassed:true,files:files.length,historyCommits:Number(git(['rev-list','--count','HEAD'])),textBlobsScanned:texts,remotes:remotes?1:0,publicationReady:false,reason:'Repositorycontrole geslaagd; PLATFORM.md en PUBLICATIESTATUS.md bepalen de geteste preview-scope. Geen stabiele volledige uitgave of runtimebundel.'},null,2));
+ console.log(JSON.stringify({candidateChecksPassed:true,files:files.length,historyCommits:Number(git(['rev-list','--count','HEAD'])),textBlobsScanned:texts,remotes:remotes?1:0,publicationReady:false,reason:'Repositorycontrole geslaagd; docs/PLATFORM.md en docs/PUBLICATIESTATUS.md bepalen de geteste preview-scope. Geen stabiele volledige uitgave of runtimebundel.'},null,2));
  if(process.argv.includes('--release'))process.exitCode=2;
 }catch(error){console.error(error.message);process.exitCode=1;}

@@ -15,7 +15,7 @@ for(const file of ['template.json','assets/Inter-Regular.ttf','assets/Inter-Bold
 check('HyperFrames',fs.existsSync(process.env.FMT_HYPERFRAMES_CLI||path.join(projectRoot,'node_modules/hyperframes/bin/hyperframes.mjs')),'Voer npm ci uit.');
 try{await findEvidenceBrowser();check('Chrome of Chromium',true,'');}catch{check('Chrome of Chromium',false,'Installeer Chrome of stel FMT_BROWSER_BIN in .fmt-local.json in.');}
 if(extended){
- check('Optioneel: Voz / Who voor automatisch uitschrijven en stemmen',fs.existsSync(path.join(projectRoot,'.runtime-desert-ant/build/release/FMTTranscribe')),'Lees MODELVOORWAARDEN.md vóór de aparte installatie; dit onderdeel vraagt licentienetwerk.',true);
+ check('Optioneel: Voz / Who voor automatisch uitschrijven en stemmen',fs.existsSync(path.join(projectRoot,'.runtime-desert-ant/build/release/FMTTranscribe')),'Lees docs/MODELVOORWAARDEN.md vóór de aparte installatie; dit onderdeel vraagt licentienetwerk.',true);
  const analysis=process.env.FMT_ANALYSIS_MODEL||path.join(projectRoot,'.runtime-models/analysis/gemma-4-E4B-it-Q4_K_M.gguf');
  check('Optioneel: lokaal analysemodel en llama-server',!!analysis&&fs.existsSync(analysis)&&run(command('llama-server'),['--version']).status===0,'Kies bewust een lokaal model en stel FMT_ANALYSIS_MODEL en zo nodig FMT_LLAMA_SERVER_BIN in.',true);
  const whisperModel=process.env.FMT_WHISPER_MODEL||path.join(projectRoot,'.runtime-models/whisper/ggml-small.bin');

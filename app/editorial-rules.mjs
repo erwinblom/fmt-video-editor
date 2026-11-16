@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
-const text=fs.readFileSync(new URL('../REDACTIEREGELS.md',import.meta.url),'utf8');
+const text=fs.readFileSync(new URL('../docs/REDACTIEREGELS.md',import.meta.url),'utf8');
 const version=Number(text.match(/^version: (\d+)$/m)?.[1]);
 if(!version)throw Error('Redactieregels missen een versienummer.');
 const hash=createHash('sha256').update(text).digest('hex');

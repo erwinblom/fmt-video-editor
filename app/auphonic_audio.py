@@ -49,7 +49,7 @@ def validate_duration(original, processed):
 
 def process_audio(source, cache_root, notify=lambda message: None):
     if os.environ.get('FMT_ALLOW_CLOUD') != '1':
-        raise RuntimeError('Cloudverwerking staat uit in deze lokale publicatiekandidaat; lees PRIVACY.md.')
+        raise RuntimeError('Cloudverwerking staat uit in deze lokale publicatiekandidaat; lees docs/PRIVACY.md.')
     if not PRESET_ID:
         raise RuntimeError('Stel een eigen FMT_AUPHONIC_PRESET_ID in; er wordt geen persoonlijke preset meegeleverd.')
     cli = os.environ.get('AUPHONIC_CLI') or shutil.which('auphonic') or str(Path.home() / '.local/bin/auphonic')

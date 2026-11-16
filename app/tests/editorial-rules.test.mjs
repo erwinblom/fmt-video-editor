@@ -22,8 +22,9 @@ for(const revision of [0,7])for(const fail of [false,true])test(`analysis preser
 });
 test('startup and background completion cannot apply a proposal, even at revision zero',()=>{
  const source=fs.readFileSync(new URL('../public/app.js',import.meta.url),'utf8');
- const startup=source.slice(source.indexOf('try{[catalog,state'),source.indexOf('// Pointer-based handles'));
- const background=source.slice(source.indexOf('async function watchImportPreparation'),source.indexOf('try{[catalog,state'));
+ const startupIndex=source.search(/try\s*\{\s*\[\s*catalog\s*,\s*state/);
+ const startup=source.slice(startupIndex,source.indexOf('// Pointer-based handles'));
+ const background=source.slice(source.indexOf('async function watchImportPreparation'),startupIndex);
  assert.ok(startup.length>100);assert.doesNotMatch(startup,/buildProposal|await persist/);assert.doesNotMatch(background,/buildProposal|await persist/);
 });
 test('fixed editorial examples have immutable quotes, both accepted and rejected cases, and no model answers',()=>{
