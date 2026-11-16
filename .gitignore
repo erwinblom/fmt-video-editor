@@ -3,7 +3,6 @@
 !/.gitignore
 !/README.md
 !/TWEE-MACS.md
-!/REDACTIEREGELS.md
 !/AGENTS.md
 !/package.json
 !/package-lock.json
@@ -27,27 +26,16 @@
 /scripts/desert-ant/.swiftpm/
 
 # Documents for this local publication candidate.
-!/PROJECT.md
-!/PUBLICATIESTATUS.md
-!/PRIVACY.md
-!/THIRD_PARTY_NOTICES.md
-!/SECURITY.md
 !/LICENSE
 !/docs/
 
 # Asset audit and third-party license notices.
-!/ASSETRECHTEN.md
 !/licenses/
 
-!/MERKVOORWAARDEN.md
 
-!/RECHTEN.md
 
-!/BEATVOORWAARDEN.md
 
-!/MODELVOORWAARDEN.md
 
-!/EXTERNE-PAKKETTEN.md
 
 # Reproducible source packages keep their explicit file list.
 !/release-files.txt
@@ -58,6 +46,5 @@
 !/*.bat
 !/*.sh
 !/.github/
-!/PLATFORM.md
 !/CHANGELOG.md
 !/.gitattributes

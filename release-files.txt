@@ -4,32 +4,32 @@
 .github/workflows/platforms.yml
 .gitignore
 AGENTS.md
-ASSETRECHTEN.md
-BEATVOORWAARDEN.md
+docs/ASSETRECHTEN.md
+docs/BEATVOORWAARDEN.md
 CHANGELOG.md
 Controleer deze Mac.command
 Deel softwarewijzigingen.command
-EXTERNE-PAKKETTEN.md
+docs/EXTERNE-PAKKETTEN.md
 Haal softwarewijzigingen op.command
 Installeer FMT Video Editor.bat
 Installeer FMT Video Editor.command
 Installeer FMT Video Editor.sh
 LICENSE
-MERKVOORWAARDEN.md
-MODELVOORWAARDEN.md
-PLATFORM.md
-PRIVACY.md
-PROJECT.md
-PUBLICATIESTATUS.md
+docs/MERKVOORWAARDEN.md
+docs/MODELVOORWAARDEN.md
+docs/PLATFORM.md
+docs/PRIVACY.md
+docs/PROJECT.md
+docs/PUBLICATIESTATUS.md
 README.md
-RECHTEN.md
-REDACTIEREGELS.md
-SECURITY.md
+docs/RECHTEN.md
+docs/REDACTIEREGELS.md
+docs/SECURITY.md
 SOURCE-SHA256SUMS.txt
 Start FMT Video Editor.bat
 Start FMT Video Editor.command
 Start FMT Video Editor.sh
-THIRD_PARTY_NOTICES.md
+docs/THIRD_PARTY_NOTICES.md
 app/analysis-jobs.mjs
 app/analyze-interview.mjs
 app/asr-words.mjs

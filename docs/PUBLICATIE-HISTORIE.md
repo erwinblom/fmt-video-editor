@@ -45,7 +45,7 @@ npm run candidate:check controleert de lokale Git-historie; het ZIP-manifest con
 
 ## Aanvullende rechtencontrole CH-199
 
-Zie [de concrete rechtencheck en resterende bewijsstukken](docs/RECHTEN-CONTROLE.md). De exacte MIT-notice voor de sherpa/pyannote-conversie is toegevoegd. De FMT-logobevoegdheid is daarna expliciet bevestigd bij CH-201. De pakket-/modelaudit staat in EXTERNE-PAKKETTEN.md en MODELVOORWAARDEN.md. De actuele conclusie en concrete upstreamvragen staan in docs/RECHTEN-CONTROLE.md. Het definitieve bronpakket wordt na deze aanvulling opnieuw samengesteld.
+Zie [de concrete rechtencheck en resterende bewijsstukken](RECHTEN-CONTROLE.md). De exacte MIT-notice voor de sherpa/pyannote-conversie is toegevoegd. De FMT-logobevoegdheid is daarna expliciet bevestigd bij CH-201. De pakket-/modelaudit staat in EXTERNE-PAKKETTEN.md en MODELVOORWAARDEN.md. De actuele conclusie en concrete upstreamvragen staan in docs/RECHTEN-CONTROLE.md. Het definitieve bronpakket wordt na deze aanvulling opnieuw samengesteld.
 
 ## Pakket-/modelaudit en installatieproef CH-197
 

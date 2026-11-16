@@ -10,4 +10,4 @@ Niet geclaimd: een kant-en-klare ondertekende native installer, een gebruikerste
 
 `npm run source:check` controleert het exacte gedownloade bronpakket. `npm run candidate:check` controleert de repository en geschiedenis op uitgesloten gegevens. `npm run release:check` blijft de strengere poort voor een toekomstige stabiele volledige uitgave; deze versie blijft bewust een preview.
 
-[Historische controles](docs/PUBLICATIE-HISTORIE.md) zijn bewaard als geschiedenis en vervangen het actuele platformbewijs niet.
+[Historische controles](PUBLICATIE-HISTORIE.md) zijn bewaard als geschiedenis en vervangen het actuele platformbewijs niet.

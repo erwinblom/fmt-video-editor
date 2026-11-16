@@ -2,7 +2,7 @@
 
 Deze afspraken gelden voor de maker en voor wie in opdracht aan de officiële FMT Video Editor werkt. Wie een eigen versie maakt, volgt `AGENTS.md` in de hoofdmap en is hier niet aan gebonden.
 
-Lees README.md, PROJECT.md, PUBLICATIESTATUS.md en REDACTIEREGELS.md.
+Lees README.md in de hoofdmap en PROJECT.md, PUBLICATIESTATUS.md en REDACTIEREGELS.md in docs/.
 
 - Werk uitsluitend in deze kandidaat; de persoonlijke editor is een andere installatie.
 - Geen echte interviews, sleutels, persoonlijke instellingen of oude Git-geschiedenis toevoegen. Testinhoud is fictief.

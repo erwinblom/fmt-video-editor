@@ -29,7 +29,7 @@ Werk je in opdracht van de maker aan de officiële FMT-uitgave? Lees dan eerst `
 | De werkwijze voor een AI-assistent bij het monteren | `skills/fmt-interview-video/SKILL.md` |
 | Projecten van de gebruiker | `app/data/` (nooit meesturen, nooit in Git) |
 
-De broncode is compact geschreven, met lange regels. Zoek op de tekst van een knop of melding om de juiste plek te vinden.
+De broncode is leesbaar opgemaakt. Sommige ingebedde HTML- en promptteksten staan op langere regels; zoek op de tekst van een knop of melding om de juiste plek te vinden.
 
 ## Vrij te veranderen
 
@@ -42,7 +42,7 @@ Kleuren, letters, indeling, naam, logo, icoon, alle teksten, de taal, de vormgev
 3. **Cloud staat standaard uit** (`FMT_ALLOW_CLOUD=0`), en de modellen van Desert Ant starten pas na een bewuste keuze van de gebruiker (`FMT_ALLOW_LICENSE_NETWORK`). Verander die standaard niet stilletjes.
 4. **Geen sleutels in de broncode.** Sleutels en persoonlijke instellingen horen in `.fmt-local.json` of `.env`, die buiten Git blijven.
 5. **Eerlijk over wat automatisch is.** Werkfragmenten zijn geen voorgestelde knippen en een transcript is geen gecontroleerde tekst. Laat de menselijke kijk- en luistercontrole staan.
-6. **Licenties van anderen.** Fonts, HyperFrames, GSAP en de onderdelen van Desert Ant hebben eigen voorwaarden en vallen niet onder MIT. Laat `LICENSE`, `THIRD_PARTY_NOTICES.md`, `MODELVOORWAARDEN.md` en de map `licenses/` staan.
+6. **Licenties van anderen.** Fonts, HyperFrames, GSAP en de onderdelen van Desert Ant hebben eigen voorwaarden en vallen niet onder MIT. Laat `LICENSE`, `docs/THIRD_PARTY_NOTICES.md`, `docs/MODELVOORWAARDEN.md` en de map `licenses/` staan.
 
 ## Controleren na elke wijziging
 
@@ -55,4 +55,4 @@ Kleuren, letters, indeling, naam, logo, icoon, alle teksten, de taal, de vormgev
 
 ## Een eigen versie delen
 
-Voor eigen gebruik hoeft de gebruiker niets te hernoemen. Wil hij zijn versie verspreiden, dan gelden de afspraken in `MERKVOORWAARDEN.md`: eigen naam, eigen logo en eigen icoon, en geen FMT of fastmovingtargets.nl meer in beeld. Het screenshot in de README valt niet onder MIT; zie `docs/SCREENSHOT.md`. "Gebaseerd op FMT Video Editor" vermelden mag.
+Voor eigen gebruik hoeft de gebruiker niets te hernoemen. Wil hij zijn versie verspreiden, dan gelden de afspraken in `docs/MERKVOORWAARDEN.md`: eigen naam, eigen logo en eigen icoon, en geen FMT of fastmovingtargets.nl meer in beeld. Het screenshot in de README valt niet onder MIT; zie `docs/SCREENSHOT.md`. "Gebaseerd op FMT Video Editor" vermelden mag.
