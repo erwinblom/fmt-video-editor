@@ -10,7 +10,7 @@
 
 Gratis · Geen account · Je video's blijven op je computer
 
-> **Dit is een half-product voor gevorderden.** Het werkt zoals het is en het is gemaakt om te veranderen, maar je installeert eerst vier programma's. Zoek je een makkelijker begin, probeer dan [Kladblok](https://github.com/erwinblom/kladblok) of [Screenshot Editor](https://github.com/erwinblom/screenshot-editor). [Spring naar: maak het van jezelf](#maak-het-van-jezelf).
+> **Voor gevorderden, en te personaliseren.** Het werkt zoals het is en je kunt het naar je eigen hand zetten, maar je installeert eerst vier programma's. Zoek je een makkelijker begin, probeer dan [Kladblok](https://github.com/erwinblom/kladblok) of [Screenshot Editor](https://github.com/erwinblom/screenshot-editor). [Spring naar: maak het van jezelf](#maak-het-van-jezelf).
 
 **Proefversie — eenmalige installatie nodig.** Dit is een bronpakket, geen kant-en-klare app. Je installeert eerst Node.js, Python, FFmpeg en Chrome volgens de uitleg hieronder. Daarna werk je lokaal in je browser. Je video's en montages blijven op je computer.
 
